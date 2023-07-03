@@ -1,0 +1,6 @@
+input a num
+if num>0
+num=num+10
+else
+num=num-10
+print num

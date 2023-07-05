@@ -1,4 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
+// See https://aka.ms/new-console-template for more information
+// write  a console application,get input from console and print the same
+
 Console.WriteLine("enter string");
 string eg1 = Console.ReadLine();
 int eg2 = Convert.ToInt32(Console.ReadLine());
@@ -9,3 +11,5 @@ Console.WriteLine("eg1"
 Console.WriteLine("eg2"+eg2);
 Console.WriteLine("eg3" + eg3);
 Console.WriteLine("eg4" + eg4);
+
+

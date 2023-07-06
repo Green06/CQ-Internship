@@ -1,0 +1,15 @@
+C:\Assigments\CQ-Internship\methods\methods\bin\Debug\net7.0\methods.exe
+C:\Assigments\CQ-Internship\methods\methods\bin\Debug\net7.0\methods.deps.json
+C:\Assigments\CQ-Internship\methods\methods\bin\Debug\net7.0\methods.runtimeconfig.json
+C:\Assigments\CQ-Internship\methods\methods\bin\Debug\net7.0\methods.dll
+C:\Assigments\CQ-Internship\methods\methods\bin\Debug\net7.0\methods.pdb
+C:\Assigments\CQ-Internship\methods\methods\obj\Debug\net7.0\methods.csproj.AssemblyReference.cache
+C:\Assigments\CQ-Internship\methods\methods\obj\Debug\net7.0\methods.GeneratedMSBuildEditorConfig.editorconfig
+C:\Assigments\CQ-Internship\methods\methods\obj\Debug\net7.0\methods.AssemblyInfoInputs.cache
+C:\Assigments\CQ-Internship\methods\methods\obj\Debug\net7.0\methods.AssemblyInfo.cs
+C:\Assigments\CQ-Internship\methods\methods\obj\Debug\net7.0\methods.csproj.CoreCompileInputs.cache
+C:\Assigments\CQ-Internship\methods\methods\obj\Debug\net7.0\methods.dll
+C:\Assigments\CQ-Internship\methods\methods\obj\Debug\net7.0\refint\methods.dll
+C:\Assigments\CQ-Internship\methods\methods\obj\Debug\net7.0\methods.pdb
+C:\Assigments\CQ-Internship\methods\methods\obj\Debug\net7.0\methods.genruntimeconfig.cache
+C:\Assigments\CQ-Internship\methods\methods\obj\Debug\net7.0\ref\methods.dll

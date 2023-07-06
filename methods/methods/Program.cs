@@ -46,6 +46,8 @@ Console.WriteLine("\nOccurrence of " + occurrenceChar + " in the string: " + occ
 
 
 **/
+
+/**
 //Rewrite the above program using stringbuilder
 using System.Text;
 Console.Write("Enter a string: ");
@@ -70,8 +72,8 @@ Console.Write("Enter a string: ");
         string reverse = sb.ToString();
 Console.WriteLine("Reverse of the string: " + reverse);**/
 //return new string(sb.ToString().Reverse().ToArray());
-  // Append "Hai" at the beginning of the given string
-   sb.Insert(0, "Hai ");
+// Append "Hai" at the beginning of the given string
+/**   sb.Insert(0, "Hai ");
    string appendedString = sb.ToString();
    Console.WriteLine("Appended string: " + appendedString);
 
@@ -88,12 +90,28 @@ Console.WriteLine("Reverse of the string: " + reverse);**/
    Console.Write("Enter a character to count its occurrence: ");
    char occurrenceChar = Console.ReadKey().KeyChar;
    int occurrenceCount = sb.ToString().Split(occurrenceChar).Length - 1;
-   Console.WriteLine("\nOccurrence of " + occurrenceChar + " in the string: " + occurrenceCount);
+   Console.WriteLine("\nOccurrence of " + occurrenceChar + " in the string: " + occurrenceCount); **/
 
-    /**sb.Reverse();
-    string reverse = sb.ToString();
-    Console.WriteLine("Reverse of the string: " + reverse); **/
-
-
+/**sb.Reverse();
+string reverse = sb.ToString();
+Console.WriteLine("Reverse of the string: " + reverse); **/
 
 
+//
+
+Console.WriteLine(DateTime.Now.ToString("MM/dd/yyyy"));
+Console.WriteLine(DateTime.Now.ToString("dddd, dd MMMM yyyy"));
+Console.WriteLine(DateTime.Now.ToString("MM/dd/yyyy HH:mm"));
+
+
+DateTime d1 = new DateTime(2020, 8, 27);
+DateTime d2 = new DateTime(2023,8, 27);
+TimeSpan timeSpan = d1.Subtract(d2);
+Console.WriteLine(timeSpan);
+
+var mydate = new DateTime(2023, 4, 4, 23, 38, 30, 989);
+
+mydate.ToString("MM/dd/yy");
+
+DateTime date = DateTime.Now;
+date = date.AddDays(10);

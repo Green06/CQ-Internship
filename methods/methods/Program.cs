@@ -8,7 +8,7 @@
 //Replace ‘a’ by ‘_’
 //Calculate occurrence of given character in a string.
 
-
+/**
 Console.WriteLine("enter a string");
 string input = Console.ReadLine();
 
@@ -43,6 +43,56 @@ Console.Write("Enter a character to count its occurrence: ");
 char occurrenceChar = Console.ReadKey().KeyChar;
 int occurrenceCount = input.Split(occurrenceChar).Length - 1;
 Console.WriteLine("\nOccurrence of " + occurrenceChar + " in the string: " + occurrenceCount);
+
+
+**/
+//Rewrite the above program using stringbuilder
+using System.Text;
+Console.Write("Enter a string: ");
+        string input = Console.ReadLine();
+
+        StringBuilder sb = new StringBuilder(input);
+
+        // Length of the string
+        int length = sb.Length;
+        Console.WriteLine("Length of the string: " + length);
+
+        // Index of a particular character
+       Console.Write("Enter a character to find its index: ");
+        char character = Console.ReadKey().KeyChar;
+        int index = sb.ToString().IndexOf(character);
+        Console.WriteLine("\nIndex of " + character + ": " + index);
+
+
+// Reverse of the string
+/**
+        sb.Reverse();
+        string reverse = sb.ToString();
+Console.WriteLine("Reverse of the string: " + reverse);**/
+//return new string(sb.ToString().Reverse().ToArray());
+  // Append "Hai" at the beginning of the given string
+   sb.Insert(0, "Hai ");
+   string appendedString = sb.ToString();
+   Console.WriteLine("Appended string: " + appendedString);
+
+   // Last character of the string
+   char lastCharacter = sb[sb.Length - 1];
+   Console.WriteLine("Last character of the string: " + lastCharacter);
+
+  // Replace 'a' by '_'
+   sb.Replace('a', '_');
+   string replacedString = sb.ToString();
+   Console.WriteLine("String with 'a' replaced by '_': " + replacedString);
+
+   // Calculate occurrence of given character in a string
+   Console.Write("Enter a character to count its occurrence: ");
+   char occurrenceChar = Console.ReadKey().KeyChar;
+   int occurrenceCount = sb.ToString().Split(occurrenceChar).Length - 1;
+   Console.WriteLine("\nOccurrence of " + occurrenceChar + " in the string: " + occurrenceCount);
+
+    /**sb.Reverse();
+    string reverse = sb.ToString();
+    Console.WriteLine("Reverse of the string: " + reverse); **/
 
 
 

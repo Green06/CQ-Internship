@@ -1,0 +1,37 @@
+create database assignments;
+
+
+use students;
+
+
+CREATE TABLE Students(
+Id int,
+Name varchar(20),
+TotalMarks int);
+
+INSERT INTO Students VALUES (1,'Neha',90);
+INSERT INTO Students VALUES (2,'Sahil',50);
+INSERT INTO Students VALUES (3,'Rohan',70);
+INSERT INTO Students VALUES (4,'Ankita',80);
+INSERT INTO Students VALUES (5,'Rahul',65);
+INSERT INTO Students VALUES (6,'Swati',55);
+INSERT INTO Students VALUES (7,'Alka',75)
+
+SELECT * FROM Students;
+
+
+select Id,Name, case
+when TotalMarks >=90 then 'A+'
+when TotalMarks >=80 then 'A'
+when TotalMarks >=70 then 'B+'
+when TotalMarks >=60 then 'C+'
+when TotalMarks >=50 then 'D'
+ELSE 'F' END AS grade from students
+
+1	Neha	A+
+2	Sahil	D
+3	Rohan	B+
+4	Ankita	A
+5	Rahul	C+
+6	Swati	D
+7	Alka	B+

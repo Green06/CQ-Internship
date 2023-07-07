@@ -11,6 +11,11 @@ caddress varchar(100),
 bid int, status varchar(20));
 
 
+CREATE TABLE publisher(
+pId int NOT NULL  IDENTITY    PRIMARY KEY ,
+pName varchar(20));
+
+
 
 alter table boook
 add author varchar(20),createdon datetime default getdate();
@@ -33,3 +38,12 @@ bId	bName	bprice	author	createdon
 2	harry potter	100	Monsen	2023-07-07 08:28:09.937
 3	data mining	100	Monsen	2023-07-07 08:28:09.960
 4	davincicode	100	Monsen	2023-07-07 08:28:09.967
+
+
+CREATE TABLE publisher(
+pId int NOT NULL  IDENTITY    PRIMARY KEY ,
+pName varchar(20));
+
+CREATE TABLE oder_history(
+oId int NOT NULL  IDENTITY    PRIMARY KEY ,
+status varchar(20),status_date date);

@@ -99,7 +99,7 @@ Console.WriteLine("Reverse of the string: " + reverse); **/
 
 //
 
-Console.WriteLine(DateTime.Now.ToString("MM/dd/yyyy"));
+/**Console.WriteLine(DateTime.Now.ToString("MM/dd/yyyy"));
 Console.WriteLine(DateTime.Now.ToString("dddd, dd MMMM yyyy"));
 Console.WriteLine(DateTime.Now.ToString("MM/dd/yyyy HH:mm"));
 
@@ -115,3 +115,60 @@ mydate.ToString("MM/dd/yy");
 
 DateTime date = DateTime.Now;
 date = date.AddDays(10);
+**/
+
+using System;
+class HelloWorld
+{
+    public static void Add(out int num1, out int num2)
+    {
+        num1 = 30;
+        num1 += 1;
+
+        num2 = 40;
+        num2 += 1;
+    }
+
+    public static void sub(out int num1, out int num2)
+    {
+        num1 = 30;
+        num1 += 1;
+
+        num2 = 40;
+        num2 += 1;
+    }
+
+    public static void mul(out int num1, out int num2)
+    {
+        num1 = 30;
+        num1 += 1;
+
+        num2 = 40;
+        num2 += 1;
+    }
+    public static void div(out int num1, out int num2)
+    {
+        num1 = 30;
+        num1 += 1;
+
+        num2 = 40;
+        num2 += 1;
+    }
+
+
+
+    static void Main()
+    {
+        // Declare two without assigning a value.
+        int num1;
+        int num2;
+
+        // Call the Add method and pass it as an out parameter.
+        Add(out num1, out num2);
+        sub(out num1, out num2);
+        div(out num1, out num2);
+        mul(out num1, out num2);
+        Console.WriteLine("Num1: {0}", num1);
+        Console.WriteLine("Num2: {0}", num2);
+    }
+}

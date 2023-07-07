@@ -21,6 +21,15 @@ add deliveredon datetime default getdate();
 select *from boook
 INSERT INTO boook (bName,bprice,author)
 VALUES ('Lars',100,'Monsen');
+INSERT INTO boook (bName,bprice,author)
+VALUES ('harry potter',100,'Monsen');
+INSERT INTO boook (bName,bprice,author)
+VALUES ('data mining',100,'Monsen');
+INSERT INTO boook (bName,bprice,author)
+VALUES ('davincicode',100,'Monsen');
 
-bName	bprice	author	bId	createdon
-Lars	100	Monsen	1	2023-07-07 08:03:42.757
+bId	bName	bprice	author	createdon
+1	Lars	100	Monsen	2023-07-07 08:03:42.757
+2	harry potter	100	Monsen	2023-07-07 08:28:09.937
+3	data mining	100	Monsen	2023-07-07 08:28:09.960
+4	davincicode	100	Monsen	2023-07-07 08:28:09.967

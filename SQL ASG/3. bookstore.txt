@@ -1,0 +1,26 @@
+CREATE TABLE boook(
+bId int NOT NULL  IDENTITY    PRIMARY KEY ,
+bName varchar(20),
+bprice int);
+
+
+
+CREATE TABLE addreess(
+cId int NOT NULL  IDENTITY    PRIMARY KEY,
+caddress varchar(100),
+bid int, status varchar(20));
+
+
+
+alter table boook
+add author varchar(20),createdon datetime default getdate();
+
+alter table addreess 
+add deliveredon datetime default getdate();
+
+select *from boook
+INSERT INTO boook (bName,bprice,author)
+VALUES ('Lars',100,'Monsen');
+
+bName	bprice	author	bId	createdon
+Lars	100	Monsen	1	2023-07-07 08:03:42.757

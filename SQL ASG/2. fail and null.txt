@@ -1,0 +1,44 @@
+1. Select values such that the students have failed including students whose mark field is NULL
+
+
+select * from Students
+select Name,TotalMarks from Students where TotalMarks<50 or TotalMarks is null; 
+
+Name	TotalMarks
+Aleena	NULL
+seema	25
+
+2. Select fields with the value NULL
+
+select Name,TotalMarks from Students where TotalMarks is null; 
+Name	TotalMarks
+Aleena	NULL
+
+3.What happens during a varchar out of bounds situation? How to insert a 10000 sized string?
+declare @str varchar(max)
+
+4.store name in Malayalam inside the database
+
+alter table Students
+add malname nvarchar(1000)
+
+NSERT INTO Students VALUES (1,'Neha',90,N'നേഹ');
+INSERT INTO Students VALUES (2,'Sahil',50,N'സാഹിൽ');
+INSERT INTO Students VALUES (3,'Rohan',70,N'രോഹൻ');
+INSERT INTO Students VALUES (4,'Ankita',80,N'അങ്കിത');
+INSERT INTO Students VALUES (5,'Rahul',65,N'രാഹുൽ');
+INSERT INTO Students VALUES (6,'Swati',55,N'സ്വാതി');
+INSERT INTO Students VALUES (7,'Alka',75,N'അൽക');
+
+
+1	Neha	90	നേഹ
+2	Sahil	50	സാഹിൽ
+3	Rohan	70	രോഹൻ
+4	Ankita	80	അങ്കിത
+5	Rahul	65	രാഹുൽ
+6	Swati	55	സ്വാതി
+7	Alka	75	അൽക
+
+
+5.  In the tables created for online bookstore, the primary key value should be updated automatically 
+

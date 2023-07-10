@@ -22,3 +22,20 @@ INSERT INTO employee VALUES ('Ankita','2023-03-13 11:12:01');
 INSERT INTO employee VALUES ('Rahul','2023-03-13 14:56:59');
 INSERT INTO employee VALUES ('Swati','2023-04-14 14:56:59');
 INSERT INTO employee VALUES ('Alka','2023-05-15 14:56:59');
+
+select SWITCHOFFSET(joiningdate,'+05:30')from employee
+select SWITCHOFFSET(joiningdate,'-04:00')from employee
+
+6. For Employee table: Display the total no. of days each intern has joined
+
+select datediff(day, joiningdate, getdate()) from employee
+
+
+5.: i) Display the no. of books arrived during the last year 
+
+select COUNT (*) from boook
+WHERE YEAR(createdon) =Year(GETDATE())-1
+
+ii) Display the no. of books arrived on every Monday during the last year
+select COUNT (*) from boook
+WHERE YEAR(createdon) =Year(GETDATE())-1 and DATEPART(weekday,createdon)=2

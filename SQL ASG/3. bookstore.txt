@@ -47,3 +47,7 @@ pName varchar(20));
 CREATE TABLE oder_history(
 oId int NOT NULL  IDENTITY    PRIMARY KEY ,
 status varchar(20),status_date date);
+
+
+
+

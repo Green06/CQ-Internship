@@ -1,0 +1,24 @@
+1. Display all records who’s name starts with John
+
+select * from employee where name like 'jhon%'
+
+2. Display all records who’s name ends with John
+select * from employee where name like '%jhon'
+
+3.Display all records who’s name have John ( can be any where )
+select * from employee where name like '%jhon%'
+
+4. Display all records who’s name starts with A and ends with n
+select * from employee where name like 'a%n'
+
+5.Display all records who have alex or deo any where in name column
+select * from employee where name like '%alex%' or name like '%deo%'
+
+6. finding a name which has  % in it
+select * from employee where name like '%[%]%'
+
+
+--------------------BOOKSTORE--------------------
+
+
+

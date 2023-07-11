@@ -13,3 +13,6 @@ SELECT REPLICATE('HI',5)
 SELECT STUFF('HELLO', 1, 2, ' HI');
 select UPPER('hello')
 select lower('hello')
+select rtrim('   hello  ')
+select ltrim('   hello  ')
+SELECT FORMAT(123456789, '##-##-#####');

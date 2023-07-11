@@ -24,18 +24,25 @@ alter table book1
 add createdon datetime default getdate();
 
 --------
-2.author_info
+2.book_author_info
 
-create table author_info(
-author_name varchar(100),
+create table book_author_info(
+
 a_id int not null identity(100,1),
-b_id int,
+b_id int,author_id int 
 constraint pk_author primary key(a_id)
-,constraint fk_author foreign key(b_id) references book1(bId) 
+,constraint fk_author foreign key(b_id) references book1(bId),
+constraint fk_book_author foreign key(author_id) references author_info(author_id)
 )
 
-insert into author_info(author_name,b_id)
-values ('jk',1)
+author_info
+create table author_info(
+
+author_id int not null identity(100,1),
+author_name varchar(100),
+constraint pk_author_info primary key(author_id)
+ 
+)
 
 -----
 3.customer_info1
@@ -64,4 +71,5 @@ c_name varchar(100)
 
 insert into customer_oder(c_id,b_id,status,c_name)
 values (200,1,'delivered','anu')
+
 

@@ -1,4 +1,4 @@
-CREATE TABLE boook(
+CREATE TABLE book(
 bId int NOT NULL  IDENTITY    PRIMARY KEY ,
 bName varchar(20),
 bprice int);
@@ -9,12 +9,17 @@ CREATE TABLE addreess(
 cId int NOT NULL  IDENTITY    PRIMARY KEY,
 caddress varchar(100),
 bid int, status varchar(20));
-
+------------------------------------------
+exec sp_rename 'addreess', 'customer_info'
+-------------------------------------------
 
 CREATE TABLE publisher(
 pId int NOT NULL  IDENTITY    PRIMARY KEY ,
 pName varchar(20));
-
+----------------------------------------------
+alter table publisher add bId int ,
+constraint fk_publisher foreign key(bId) references boook(bId)
+---------------------------------------------------------------
 
 
 alter table boook
@@ -47,6 +52,12 @@ pName varchar(20));
 CREATE TABLE oder_history(
 oId int NOT NULL  IDENTITY    PRIMARY KEY ,
 status varchar(20),status_date date);
+
+------------------------------------------------------
+exec sp_rename 'oder_history', 'oder_info'
+alter table oder_info add bId int ,
+constraint fk_oder_info foreign key(bId) references boook(bId)
+-----------------------------------------------------------
 
 
 

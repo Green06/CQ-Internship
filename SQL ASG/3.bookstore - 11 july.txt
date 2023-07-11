@@ -1,0 +1,67 @@
+cust_info1 <- cust_oder -> book1 -> author_info1
+
+--------
+1.book1
+
+CREATE TABLE book1(
+bId int NOT NULL  IDENTITY,
+btitle varchar(20),
+bprice int,
+constraint pk_book1 primary key(bId));
+
+INSERT INTO book1 (btitle,bprice)
+VALUES ('hp1',100);
+INSERT INTO book1 (btitle,bprice)
+VALUES ('hp2',200);
+INSERT INTO book1 (btitle,bprice)
+VALUES ('hp3',150);
+INSERT INTO book1 (btitle,bprice)
+VALUES ('hp4',140);
+INSERT INTO book1 (btitle,bprice)
+VALUES ('hp5',300);
+
+alter table book1
+add createdon datetime default getdate();
+
+--------
+2.author_info
+
+create table author_info(
+author_name varchar(100),
+a_id int not null identity(100,1),
+b_id int,
+constraint pk_author primary key(a_id)
+,constraint fk_author foreign key(b_id) references book1(bId) 
+)
+
+insert into author_info(author_name,b_id)
+values ('jk',1)
+
+-----
+3.customer_info1
+
+create table customer_info1(
+c_name varchar(100),
+c_id int not null identity(200,1),
+c_address varchar(1000),
+constraint pk_cust_info1 primary key(c_id)
+)
+
+insert into customer_info1(c_name,c_address)
+values ('anu','abc house')
+-------
+4.customer_oder
+
+create table customer_oder(
+
+o_id int not null identity(1000,1),
+c_id int,b_id int,delivered_on datetime default getdate(),status varchar(100)
+constraint pk_oder primary key(o_id)
+,constraint fk_oder foreign key(b_id) references book1(bId),
+constraint fk_oder2 foreign key(c_id) references customer_info1(c_id) 
+c_name varchar(100)
+)
+
+insert into customer_oder(c_id,b_id,status,c_name)
+values (200,1,'delivered','anu')
+

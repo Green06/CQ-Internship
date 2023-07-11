@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Assigments\\CQ-Internship\\c#\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.csproj",
+      "projectUniqueName": "C:\\Assigments\\CQ-Internship\\c#\\EmployeeManagement - 10 jul\\EmployeeManagement\\EmployeeManagement.csproj",
       "projectName": "EmployeeManagement",
-      "projectPath": "C:\\Assigments\\CQ-Internship\\c#\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.csproj",
+      "projectPath": "C:\\Assigments\\CQ-Internship\\c#\\EmployeeManagement - 10 jul\\EmployeeManagement\\EmployeeManagement.csproj",
       "packagesPath": "C:\\Users\\CQ-Christina\\.nuget\\packages\\",
-      "outputPath": "C:\\Assigments\\CQ-Internship\\c#\\EmployeeManagement\\EmployeeManagement\\obj\\",
+      "outputPath": "C:\\Assigments\\CQ-Internship\\c#\\EmployeeManagement - 10 jul\\EmployeeManagement\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\CQ-Christina\\AppData\\Roaming\\NuGet\\NuGet.Config",

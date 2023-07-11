@@ -1,0 +1,15 @@
+select * from employee
+select SUBSTRING(name,1,3) from employee
+select LEFT(name,3) from employee
+select RIGHT(name,3) from employee
+select LEN(name) from employee
+select DATALENGTH(name) from employee
+select CHARINDEX('T',name) from employee
+select PATINDEX('%HA%',name) from employee
+SELECT CONCAT('HI','HELLO')
+SELECT CONCAT_WS('HI','  HELLO','HEY')
+SELECT REPLACE('HELLO','E','I')
+SELECT REPLICATE('HI',5)
+SELECT STUFF('HELLO', 1, 2, ' HI');
+select UPPER('hello')
+select lower('hello')

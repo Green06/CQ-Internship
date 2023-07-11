@@ -1,0 +1,15 @@
+C:\Assigments\CQ-Internship\c#\EmployeeManagement\EmployeeManagement\obj\Debug\net7.0\EmployeeManagement.csproj.AssemblyReference.cache
+C:\Assigments\CQ-Internship\c#\EmployeeManagement\EmployeeManagement\obj\Debug\net7.0\EmployeeManagement.GeneratedMSBuildEditorConfig.editorconfig
+C:\Assigments\CQ-Internship\c#\EmployeeManagement\EmployeeManagement\obj\Debug\net7.0\EmployeeManagement.AssemblyInfoInputs.cache
+C:\Assigments\CQ-Internship\c#\EmployeeManagement\EmployeeManagement\obj\Debug\net7.0\EmployeeManagement.AssemblyInfo.cs
+C:\Assigments\CQ-Internship\c#\EmployeeManagement\EmployeeManagement\obj\Debug\net7.0\EmployeeManagement.csproj.CoreCompileInputs.cache
+C:\Assigments\CQ-Internship\c#\EmployeeManagement\EmployeeManagement\bin\Debug\net7.0\EmployeeManagement.exe
+C:\Assigments\CQ-Internship\c#\EmployeeManagement\EmployeeManagement\bin\Debug\net7.0\EmployeeManagement.deps.json
+C:\Assigments\CQ-Internship\c#\EmployeeManagement\EmployeeManagement\bin\Debug\net7.0\EmployeeManagement.runtimeconfig.json
+C:\Assigments\CQ-Internship\c#\EmployeeManagement\EmployeeManagement\bin\Debug\net7.0\EmployeeManagement.dll
+C:\Assigments\CQ-Internship\c#\EmployeeManagement\EmployeeManagement\bin\Debug\net7.0\EmployeeManagement.pdb
+C:\Assigments\CQ-Internship\c#\EmployeeManagement\EmployeeManagement\obj\Debug\net7.0\EmployeeManagement.dll
+C:\Assigments\CQ-Internship\c#\EmployeeManagement\EmployeeManagement\obj\Debug\net7.0\refint\EmployeeManagement.dll
+C:\Assigments\CQ-Internship\c#\EmployeeManagement\EmployeeManagement\obj\Debug\net7.0\EmployeeManagement.pdb
+C:\Assigments\CQ-Internship\c#\EmployeeManagement\EmployeeManagement\obj\Debug\net7.0\EmployeeManagement.genruntimeconfig.cache
+C:\Assigments\CQ-Internship\c#\EmployeeManagement\EmployeeManagement\obj\Debug\net7.0\ref\EmployeeManagement.dll

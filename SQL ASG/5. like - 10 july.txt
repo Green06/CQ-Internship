@@ -20,5 +20,16 @@ select * from employee where name like '%[%]%'
 
 --------------------BOOKSTORE--------------------
 
+7 adding constraints to pk and fk
 
 
+create table oderhistory(
+h_id int not null identity(100,1),oder_date datetime not null ,
+customer_id int, constraint pk_history primary key(h_id,oder_date)
+,constraint fk_history foreign key(customer_id) references addreess(cId) 
+)
+
+8.adding constraints to check
+
+alter table boook
+add constraint chk check (bprice >= 100)

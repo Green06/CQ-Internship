@@ -1,0 +1,5 @@
+C:\Assigments\CQ-Internship\c#\employee_10 jul\employee_10 jul\obj\Debug\net7.0\employee_10 jul.csproj.AssemblyReference.cache
+C:\Assigments\CQ-Internship\c#\employee_10 jul\employee_10 jul\obj\Debug\net7.0\employee_10 jul.GeneratedMSBuildEditorConfig.editorconfig
+C:\Assigments\CQ-Internship\c#\employee_10 jul\employee_10 jul\obj\Debug\net7.0\employee_10 jul.AssemblyInfoInputs.cache
+C:\Assigments\CQ-Internship\c#\employee_10 jul\employee_10 jul\obj\Debug\net7.0\employee_10 jul.AssemblyInfo.cs
+C:\Assigments\CQ-Internship\c#\employee_10 jul\employee_10 jul\obj\Debug\net7.0\employee_10 jul.csproj.CoreCompileInputs.cache

@@ -1,0 +1,63 @@
+1.Show the CompanyName for James D. Kramer
+
+SELECT  CompanyName FROM SalesLT.Customer where 
+Firstname + ' ' + MiddleName+ ' ' + LastName like 'James D. Kramer'
+
+CompanyName
+Refined Department Stores
+
+
+2.Show all the addresses listed for company 'Modular Cycle Systems' 
+
+ select  AddressLine1, AddressLine2 
+	from SalesLT.Address as a
+	inner join SalesLT.CustomerAddress ca
+	on (a.AddressID=ca.AddressID)
+	inner join SalesLT.Customer c
+	on (ca.CustomerID=c.CustomerID)
+	where c.CompanyName='Modular Cycle Systems' 
+AddressLine1	AddressLine2
+800 Interchange Blvd.	Suite 2501
+165 North Main	NULL
+
+
+
+
+4.Show the first name and the email address of customer with CompanyName 'Bike World
+Select distinct FirstName, EmailAddress from 
+SalesLT.Customer
+where CompanyName='Bike World'
+
+5.Show the CompanyName for all customers with an address in City 'Dallas'
+select CompanyName from SalesLT.Customer c
+inner join SalesLT.CustomerAddress ca
+on(c.CustomerID = ca.CustomerID)
+inner join SalesLT.Address a
+on(ca.AddressID=a.AddressID)
+where a.City= 'Dallas'
+
+
+select distinct CompanyName from SalesLT.Customer c
+inner join SalesLT.CustomerAddress ca
+on(c.CustomerID = ca.CustomerID)
+inner join SalesLT.Address a
+on(ca.AddressID=a.AddressID)
+where a.City= 'Dallas'
+
+
+CompanyName
+Unsurpassed Bikes
+Third Bike Store
+Town Industries
+Rental Bikes
+Elite Bikes
+Elite Bikes
+
+CompanyName
+Elite Bikes
+Rental Bikes
+Third Bike Store
+Town Industries
+Unsurpassed Bikes
+
+

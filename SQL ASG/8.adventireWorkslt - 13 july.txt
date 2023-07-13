@@ -1,0 +1,33 @@
+1. What is the Name, ProductID and Weight for the item with Product Number 'RM-M823'
+
+select Name, ProductID , Weight
+from SalesLT.Product p
+where ProductNumber = 'RM-M823'
+
+2. List products with weight greater than 500. For those products, show the following information: Product ID, Name, ListPrice and calculated Gross Margin (difference between list price and standard cost)
+
+select
+ProductID, Name, ListPrice,(ListPrice-StandardCost)
+as GrossMargin
+from SalesLT.Product p
+where p.Weight>500
+
+3. How many Products are there with the standard weight between 400 and 500
+
+Select COUNT(*) from SalesLT.Product
+where Weight between 400 and 500
+
+4. How many Yellow colored bikes are there (Bikes can be identified by the Product number starting with 'BK')
+
+select COUNT(*) from SalesLT.Product
+where ProductNumber like 'BK%' and Color='Yellow'
+
+5. Find average, maximum and minimum list price for each Product line (exclude products where Product line is NULL), sort descending by Average Standard Cost.
+
+select AVG(ListPrice),max(ListPrice),min(ListPrice)
+from SalesLT.Product 
+group by ProductNumber
+having  substring(ProductNumber,1,2)  is not null  
+order by AVG(StandardCost) desc
+
+

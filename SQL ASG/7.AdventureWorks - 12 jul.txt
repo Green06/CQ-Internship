@@ -20,7 +20,20 @@ AddressLine1	AddressLine2
 800 Interchange Blvd.	Suite 2501
 165 North Main	NULL
 
+3.Show OrdeQty, the Product Name and the Product ListPrice of the order made by CustomerID 635 or 30025
 
+select OrderQty,Name,ListPrice 
+from SalesLT.Product as p
+inner join SalesLT.SalesOrderDetail sod
+on (sod.ProductID = p.ProductID)
+inner join SalesLT.SalesOrderHeader soh
+on (soh.SalesOrderID=sod.SalesOrderID)
+inner join SalesLT.Customer c
+on (c.CustomerID=soh.CustomerID)
+where c.CustomerID=635 or c.CustomerID=30025
+
+OrderQty	Name	ListPrice
+7	Racing Socks, L	8.99
 
 
 4.Show the first name and the email address of customer with CompanyName 'Bike World
@@ -60,4 +73,62 @@ Third Bike Store
 Town Industries
 Unsurpassed Bikes
 
+6.How many items with ListPrice more than $1000 have been sold?
+select  count (distinct p.ProductID)
+from SalesLT.SalesOrderDetail as sod
+inner join SalesLT.Product as p
+on (p.ProductID=sod.ProductID)
+where ListPrice >=1000
+
+7.Give the CompanyName of those customers with orders over $100000. Include the subtotal plus tax plus freight.
+select CompanyName,SubTotal,TaxAmt,Freight
+from SalesLT.Customer as c
+inner join SalesLT.SalesOrderHeader as soh
+on (soh.CustomerID=c.CustomerID)
+inner join SalesLT.SalesOrderDetail as sod
+on (sod.SalesOrderID=soh.SalesOrderID)
+where soh.Freight+soh.TaxAmt+soh.SubTotal>100000
+
+8.Find the number of left racing socks ('Racing Socks, L') ordered by CompanyName 'Riding Cycles'
+
+select  OrderQty from  SalesLT.SalesOrderDetail sod
+inner join SalesLT.Product as p
+on (sod.ProductID=p.ProductID)
+inner join SalesLT.SalesOrderHeader soh
+on (soh.SalesOrderID=sod.SalesOrderID)
+inner join SalesLT.Customer c
+on (c.CustomerID=soh.CustomerID)
+where c.CompanyName = 'Riding Cycles' and p.Name ='Racing Socks, L'
+
+
+
+
+9. “Single Item Order” is a customer order where only one item is ordered. Show the SalesOrderID and the UnitPrice for every Single Item Order.
+
+select UnitPrice
+from SalesLT.SalesOrderDetail sod
+
+where sod.SalesOrderID
+in(select sod.SalesOrderID
+from SalesLT.SalesOrderDetail as sod 
+group by sod.SalesOrderID having COUNT(*)=1)
+
+UnitPrice
+63.90
+858.90
+5.394
+31.584
+
+10.Show the product description for culture ‘fr’ for product with ProductID 736.
+Select Culture from SalesLT.ProductModelProductDescription pmpd
+inner join SalesLT.ProductDescription pd
+on (pd.ProductDescriptionID=pmpd.ProductDescriptionID)
+inner join SalesLT.ProductModel pm
+on (pm.ProductModelID=pmpd.ProductModelID)
+inner join SalesLT.Product p
+on(p.ProductModelID=pm.ProductModelID)
+where p.ProductID=736 and pmpd.Culture='fr'
+
+Culture
+fr    
 

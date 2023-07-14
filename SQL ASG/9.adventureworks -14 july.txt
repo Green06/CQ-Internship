@@ -1,0 +1,42 @@
+1.  Use the SubTotal value in SaleOrderHeader to list orders from the largest to the smallest. For each order show the CompanyName and the SubTotal and the total weight of the order.
+
+select c.CompanyName,soh.SubTotal,sum(sod.OrderQty*p.Weight) as sum
+from SalesLT.Customer c
+inner join SalesLT.SalesOrderHeader soh
+on soh.CustomerID=c.CustomerID
+inner join SalesLT.SalesOrderDetail sod
+on sod.SalesOrderID=soh.SalesOrderID
+inner join SalesLT.Product p
+on p.ProductID=sod.ProductID
+group by c.CompanyName,soh.SubTotal
+order by SubTotal desc 
+
+2. How many products in ProductCategory ‘Cranksets’ have been sold to an address in ‘London’?
+
+ select SUM(sod.orderqty)
+ from SalesLT.Product p
+ inner join SalesLT.ProductCategory pc
+ on p.ProductCategoryID=pc.ProductCategoryID
+ inner join SalesLT.SalesOrderDetail sod
+ on sod.ProductID=p.ProductID
+ inner join SalesLT.SalesOrderHeader soh
+ on soh.SalesOrderID=sod.SalesOrderID
+ inner join SalesLT.Address a
+ on a.AddressID=soh.BillToAddressID
+ where pc.Name='Cranksets' and a.City='London'
+
+
+
+3.For every customer with a ‘Main Office’ in Dallas show AddressLine1 of the ‘Main Office’ and AddressLine1 of the ‘Shipping’ address - if there is no shipping address leave it blank. Use one row per customer.
+ -- Here Main Office and shipping is address type
+
+ select * from SalesLT.Address a
+ inner join SalesLT.CustomerAddress ca
+ on ca.AddressID=a.AddressID
+ where City='Dallas' and ca.AddressType ='Main Office'
+
+ Select * from SalesLT.SalesOrderHeader soh
+
+ select * from SalesLT.SalesOrderDetail sod
+
+  select * from SalesLT.CustomerAddress

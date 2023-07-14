@@ -24,10 +24,12 @@ where ProductNumber like 'BK%' and Color='Yellow'
 
 5. Find average, maximum and minimum list price for each Product line (exclude products where Product line is NULL), sort descending by Average Standard Cost.
 
-select AVG(ListPrice),max(ListPrice),min(ListPrice)
+select AVG(ListPrice) as avg ,max(ListPrice) as max ,min(ListPrice)as min
 from SalesLT.Product 
 group by ProductNumber
-having  substring(ProductNumber,1,2)  is not null  
+having  substring(ProductNumber,1,2)  is not null 
+--where ProductNumber like '__' and ProductNumber is not null 
 order by AVG(StandardCost) desc
+
 
 

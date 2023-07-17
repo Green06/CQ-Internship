@@ -3,6 +3,12 @@
 SELECT  CompanyName FROM SalesLT.Customer where 
 Firstname + ' ' + MiddleName+ ' ' + LastName like 'James D. Kramer'
 
+
+======================
+
+	SELECT  CompanyName FROM SalesLT.Customer where 
+Firstname + ' ' + MiddleName+ ' ' + LastName  = 'James D. Kramer'
+
 CompanyName
 Refined Department Stores
 
@@ -91,7 +97,7 @@ where soh.Freight+soh.TaxAmt+soh.SubTotal>100000
 
 8.Find the number of left racing socks ('Racing Socks, L') ordered by CompanyName 'Riding Cycles'
 
-select  OrderQty from  SalesLT.SalesOrderDetail sod
+select distinct  sum(OrderQty) from  SalesLT.SalesOrderDetail sod
 inner join SalesLT.Product as p
 on (sod.ProductID=p.ProductID)
 inner join SalesLT.SalesOrderHeader soh

@@ -30,13 +30,81 @@ order by SubTotal desc
 3.For every customer with a ‘Main Office’ in Dallas show AddressLine1 of the ‘Main Office’ and AddressLine1 of the ‘Shipping’ address - if there is no shipping address leave it blank. Use one row per customer.
  -- Here Main Office and shipping is address type
 
- select * from SalesLT.Address a
- inner join SalesLT.CustomerAddress ca
- on ca.AddressID=a.AddressID
- where City='Dallas' and ca.AddressType ='Main Office'
+ 
+SELECT c.FirstName ,a.AddressLine1,ad.AddressLine1 from SalesLT.Customer c
+INNER JOIN SalesLT.CustomerAddress ca
+on c.CustomerID=ca.CustomerID
+and ca.AddressType='Main Office'
+INNER JOIN SalesLT.Address a
+on a.AddressID=ca.AddressID
+and a.City='Dallas'
+LEFT JOIN SalesLT.CustomerAddress cus
+on c.CustomerID= cus.CustomerID
+and cus.AddressType ='Shipping'
+LEFT JOIN SalesLT.Address ad
+on ad.AddressID=cus.AddressID
 
- Select * from SalesLT.SalesOrderHeader soh
+4.For each order show the SalesOrderID and SubTotal calculated  in three ways: 
+   A) From the SalesOrderHeader  (Order header table)
 
- select * from SalesLT.SalesOrderDetail sod
+select SalesOrderID,SubTotal
+ FROM SalesLT.SalesOrderHeader soh
 
-  select * from SalesLT.CustomerAddress
+
+   B) Sum of OrderQtyUnitPrice  ( Order Detail table ) 
+ select sod.SalesOrderID,soh.SubTotal,SUM(OrderQty*UnitPrice) as sum
+ FROM SalesLT.SalesOrderDetail sod
+ inner join SalesLT.SalesOrderHeader soh
+ on soh.SalesOrderID=sod.SalesOrderID
+ group by sod.SalesOrderID,soh.SubTotal
+
+   C) Sum of OrderQtyListPrice (Product table)
+
+  select sod.SalesOrderID,soh.SubTotal,SUM(OrderQty*ListPrice) as sum
+ FROM SalesLT.SalesOrderDetail sod
+ inner join SalesLT.SalesOrderHeader soh
+ on soh.SalesOrderID=sod.SalesOrderID
+ inner join SalesLT.Product p
+ on p.ProductID=sod.ProductID
+ group by sod.SalesOrderID,soh.SubTotal
+
+
+5.Show the best selling item by value.
+
+
+ select top 1 p.Name,sum((p.ListPrice-p.StandardCost)*sod.OrderQty) bestsellingitem from SalesLT.SalesOrderDetail sod
+ inner join SalesLT.Product p
+on  p.ProductID = sod.ProductID
+group by p.Name 
+order by sum((p.ListPrice-p.StandardCost)*sod.OrderQty)desc
+
+6.From which city 
+    
+
+a) most no of order
+  Select top 1 a.city from SalesLT.Address a
+  inner join SalesLT.SalesOrderHeader soh
+  on soh.ShipToAddressID=a.AddressID
+  inner join SalesLT.SalesOrderDetail sod
+  on sod.SalesOrderID = soh.SalesOrderID
+  group by a.City
+  order by count(sod.OrderQty) desc
+
+ b) most profitable city 
+
+ select top 1 City,sum(p.ListPrice-p.StandardCost) profit from SalesLT.Product p
+ inner join SalesLT.SalesOrderDetail sod
+ on p.ProductID= sod.ProductID
+ inner join SalesLT.SalesOrderHeader soh
+ on soh.SalesOrderID=sod.SalesOrderID
+ inner join SalesLT.Address a
+ on a.AddressID=soh.BillToAddressID
+group by City
+order by profit desc
+
+c) which hasn't placed any orders
+
+ Select City from SalesLT.Address a
+left  join SalesLT.SalesOrderHeader soh
+on a.AddressID=soh.BillToAddressID
+where soh.BillToAddressID is null

@@ -1,0 +1,15 @@
+C:\Assigments\CQ-Internship\c#\employee 17 july\employee 17 july\bin\Debug\net7.0\employee 17 july.exe
+C:\Assigments\CQ-Internship\c#\employee 17 july\employee 17 july\bin\Debug\net7.0\employee 17 july.deps.json
+C:\Assigments\CQ-Internship\c#\employee 17 july\employee 17 july\bin\Debug\net7.0\employee 17 july.runtimeconfig.json
+C:\Assigments\CQ-Internship\c#\employee 17 july\employee 17 july\bin\Debug\net7.0\employee 17 july.dll
+C:\Assigments\CQ-Internship\c#\employee 17 july\employee 17 july\bin\Debug\net7.0\employee 17 july.pdb
+C:\Assigments\CQ-Internship\c#\employee 17 july\employee 17 july\obj\Debug\net7.0\employee 17 july.csproj.AssemblyReference.cache
+C:\Assigments\CQ-Internship\c#\employee 17 july\employee 17 july\obj\Debug\net7.0\employee 17 july.GeneratedMSBuildEditorConfig.editorconfig
+C:\Assigments\CQ-Internship\c#\employee 17 july\employee 17 july\obj\Debug\net7.0\employee 17 july.AssemblyInfoInputs.cache
+C:\Assigments\CQ-Internship\c#\employee 17 july\employee 17 july\obj\Debug\net7.0\employee 17 july.AssemblyInfo.cs
+C:\Assigments\CQ-Internship\c#\employee 17 july\employee 17 july\obj\Debug\net7.0\employee 17 july.csproj.CoreCompileInputs.cache
+C:\Assigments\CQ-Internship\c#\employee 17 july\employee 17 july\obj\Debug\net7.0\employee 17 july.dll
+C:\Assigments\CQ-Internship\c#\employee 17 july\employee 17 july\obj\Debug\net7.0\refint\employee 17 july.dll
+C:\Assigments\CQ-Internship\c#\employee 17 july\employee 17 july\obj\Debug\net7.0\employee 17 july.pdb
+C:\Assigments\CQ-Internship\c#\employee 17 july\employee 17 july\obj\Debug\net7.0\employee 17 july.genruntimeconfig.cache
+C:\Assigments\CQ-Internship\c#\employee 17 july\employee 17 july\obj\Debug\net7.0\ref\employee 17 july.dll

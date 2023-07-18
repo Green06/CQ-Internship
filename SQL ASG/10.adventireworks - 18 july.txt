@@ -1,0 +1,17 @@
+6.How many items with ListPrice more than $1000 have been sold?
+select count(distinct ProductID) from SalesLT.Product p
+WHERE EXISTS
+(select * from SalesLT.SalesOrderDetail sod
+where sod.ProductID=p.ProductID) and p.ListPrice >=1000
+
+
+
+9.“Single Item Order” is a customer order where only one item is ordered. Show the SalesOrderID and the UnitPrice for every Single Item Order.
+
+
+select sod1.SalesOrderID, sod1.UnitPrice
+from SalesLT.SalesOrderDetail sod1
+where exists(select *
+from SalesLT.SalesOrderDetail as sod2
+where sod1.SalesOrderID = sod2.SalesOrderID
+group by sod2.SalesOrderID having COUNT(*)=1)

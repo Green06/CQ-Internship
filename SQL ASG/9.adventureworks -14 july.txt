@@ -69,6 +69,27 @@ select SalesOrderID,SubTotal
  group by sod.SalesOrderID,soh.SubTotal
 
 
+---------------------------
+
+Is there any way two appends all these 3 result as a single result set without using join 
+
+select SalesOrderID,SubTotal,'A'
+ FROM SalesLT.SalesOrderHeader soh
+ union all
+  select sod.SalesOrderID,SUM(OrderQty*UnitPrice) as sum,'B'
+ FROM SalesLT.SalesOrderDetail sod
+ inner join SalesLT.SalesOrderHeader soh
+ on soh.SalesOrderID=sod.SalesOrderID
+ group by sod.SalesOrderID,soh.SubTotal
+ union all
+   select sod.SalesOrderID,SUM(OrderQty*ListPrice) as sum,'C'
+ FROM SalesLT.SalesOrderDetail sod
+ inner join SalesLT.SalesOrderHeader soh
+ on soh.SalesOrderID=sod.SalesOrderID
+ inner join SalesLT.Product p
+ on p.ProductID=sod.ProductID
+ group by sod.SalesOrderID,soh.SubTotal
+
 5.Show the best selling item by value.
 
 
@@ -108,3 +129,14 @@ c) which hasn't placed any orders
 left  join SalesLT.SalesOrderHeader soh
 on a.AddressID=soh.BillToAddressID
 where soh.BillToAddressID is null
+
+
+----------------------------
+
+
+ Select distinct City from SalesLT.Address a
+left  join SalesLT.SalesOrderHeader soh
+on a.AddressID=soh.BillToAddressID
+where soh.ShipToAddressID is null
+
+

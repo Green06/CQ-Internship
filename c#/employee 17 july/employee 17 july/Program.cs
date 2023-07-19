@@ -27,14 +27,28 @@ public class Program
             JobType = 'C'
         };
 
-        IBonusCalculator permanentBonusCalculator = new PermanentEmployeeBonusCalculator();
-        IBonusCalculator contractBonusCalculator = new ContractEmployeeBonusCalculator();
+        if (contractEmployee.JobType == 'C')
+        {
+            IBonusCalculator contractBonusCalculator = new ContractEmployeeBonusCalculator();
+            double contractEmployeeBonus = contractBonusCalculator.CalculateBonus(contractEmployee);
+            Console.WriteLine("Bonus for Contract Employee: " + contractEmployeeBonus);
+        }
 
-        double permanentEmployeeBonus = permanentBonusCalculator.CalculateBonus(permanentEmployee);
-        double contractEmployeeBonus = contractBonusCalculator.CalculateBonus(contractEmployee);
+        else
+        {
+            IBonusCalculator permanentBonusCalculator = new PermanentEmployeeBonusCalculator();
 
-        Console.WriteLine("Bonus for Permanent Employee: " + permanentEmployeeBonus);
-        Console.WriteLine("Bonus for Contract Employee: " + contractEmployeeBonus);
+
+            double permanentEmployeeBonus = permanentBonusCalculator.CalculateBonus(permanentEmployee);
+
+
+            Console.WriteLine("Bonus for Permanent Employee: " + permanentEmployeeBonus);
+
+        }
+        
+        
+
+        
     }
 }
 

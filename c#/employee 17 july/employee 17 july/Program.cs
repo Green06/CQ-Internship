@@ -33,8 +33,12 @@ public class Program
             double contractEmployeeBonus = contractBonusCalculator.CalculateBonus(contractEmployee);
             Console.WriteLine("Bonus for Contract Employee: " + contractEmployeeBonus);
         }
-
         else
+        {
+            Console.WriteLine("nor valid");
+        }
+
+        if(permanentEmployee.JobType =='P')
         {
             IBonusCalculator permanentBonusCalculator = new PermanentEmployeeBonusCalculator();
 
@@ -45,10 +49,10 @@ public class Program
             Console.WriteLine("Bonus for Permanent Employee: " + permanentEmployeeBonus);
 
         }
-        
-        
+        else { Console.WriteLine("not valid"); }
 
-        
+
+
     }
 }
 

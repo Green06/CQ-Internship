@@ -1,0 +1,82 @@
+CREATE TABLE MovieDetails(
+MovieId int NOT NULL IDENTITY,
+MovieName varchar(20)
+CONSTRAINT pk_MovieDetails PRIMARY KEY(MovieId)
+)
+
+
+CREATE TABLE Language(
+LanguageId int NOT NULL IDENTITY(50,1),
+LanguageName varchar(20)
+CONSTRAINT pk_Language PRIMARY KEY(LanguageId)
+)
+
+CREATE TABLE Genre(
+GenreId int NOT NULL IDENTITY(100,1),
+GenreType varchar(20)
+CONSTRAINT pk_Genre PRIMARY KEY(GenreId)
+)
+
+CREATE TABLE LanguageMovieDetails(
+LanguageMovieDetailsID int NOT NULL IDENTITY(200,1),
+MovieId int,
+LanguageId int,
+CONSTRAINT pk_LanguageMovieDetails PRIMARY KEY(LanguageMovieDetailsID),
+constraint fk_MovieId foreign key(MovieId) references MovieDetails(MovieId),
+constraint fk_LanguageId foreign key(LanguageId) references Language(LanguageId)
+)
+
+CREATE TABLE MovieGenre(
+MovieGenreID int NOT NULL IDENTITY(300,1),
+MovieId int,
+GenreId int,
+CONSTRAINT pk_MovieGenreID PRIMARY KEY(MovieGenreID),
+constraint fk_MovieId2 foreign key(MovieId) references MovieDetails(MovieId),
+constraint fk_GenreId foreign key(GenreId) references Genre(GenreID)
+)
+
+CREATE TABLE Customer(
+CustomerID int NOT NULL IDENTITY(500,1),
+CustomerName varchar(20),
+CustomerMob int,
+CONSTRAINT pk_CustomerID PRIMARY KEY(CustomerID),
+)
+
+CREATE TABLE Payment(
+PaymentID int NOT NULL IDENTITY(600,1),
+PaymentType varchar,
+CustomerId int,
+CONSTRAINT pk_PaymentID PRIMARY KEY(PaymentID),
+constraint fk_CustomerId foreign key(CustomerId) references Customer(CustomerId),
+
+)
+
+
+CREATE TABLE TicketBooking(
+TicketId int NOT NULL IDENTITY(400,1),
+[Date] datetime,
+MovieId int,
+PaymentId int,
+CustomerId int,
+LocationId int,
+TheatreId int,
+CONSTRAINT pk_TicketId PRIMARY KEY(TicketId),
+constraint fk_MovieId3 foreign key(MovieId) references MovieDetails(MovieId),
+constraint fk_PaymentId foreign key(PaymentId) references Payment(PaymentID),
+constraint fk_CustomerId2 foreign key(CustomerId) references Customer(CustomerId),
+constraint fk_LocationId foreign key(LocationId) references Location(LocationId),
+constraint fk_TheatreId2 foreign key(TheatreId) references Theatre(TheatreId)
+)
+
+
+CREATE TABLE Location(
+LocationId int NOT NULL IDENTITY(600,1),
+LocationName varchar,
+TheatreId int,
+CONSTRAINT pk_LocationId PRIMARY KEY(LocationId),
+constraint fk_TheatreId foreign key(TheatreId) references Theatre(TheatreId)
+
+)
+
+
+

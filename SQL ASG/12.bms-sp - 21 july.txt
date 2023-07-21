@@ -1,0 +1,75 @@
+CREATE PROCEDURE SpGenre 
+@Genre varchar(20)  
+AS  
+BEGIN  
+	insert into Genre Values (@Genre)
+    
+END 
+go
+
+exec SpGenre @Genre = 'Thriller' 
+exec SpGenre @Genre = 'Comedy' 
+exec SpGenre @Genre = 'Romance' 
+exec SpGenre @Genre = 'Horror' 
+exec SpGenre @Genre = 'Action' 
+
+CREATE PROCEDURE SpLanguage
+@Language varchar(20)  
+AS  
+BEGIN  
+	insert into Genre Values (@Language)
+    
+END 
+go
+
+exec SpLanguage @Language = 'Malayalam' 
+exec SpLanguage @Language = 'English' 
+exec SpLanguage @Language = 'Tamil' 
+exec SpLanguage @Language = 'Hindi' 
+exec SpLanguage @Language = 'Kannada' 
+
+
+CREATE PROCEDURE spMovieDetails
+@MovieName varchar(20)  
+AS  
+BEGIN  
+	insert into MovieDetails Values (@MovieName)
+    
+END 
+go
+
+exec spMovieDetails @MovieName = 'Bhahubali' 
+exec spMovieDetails @MovieName = 'C U Soon' 
+exec spMovieDetails @MovieName = 'Drishyam' 
+exec spMovieDetails @MovieName = 'Minnal Murali' 
+exec spMovieDetails @MovieName = 'vazhiye' 
+
+
+
+CREATE PROCEDURE spTheatre
+@TheatreName varchar(20)  
+AS  
+BEGIN  
+	insert into Theatre Values (@TheatreName)
+    
+END 
+go
+
+exec spTheatre @TheatreName = 'Sangeetha'
+exec spTheatre @TheatreName = 'Aasha'
+exec spTheatre @TheatreName = 'Nila'
+exec spTheatre @TheatreName = 'Kabani'
+exec spTheatre @TheatreName = 'Yamuna'
+
+select * from Theatre
+
+CREATE PROCEDURE spSeat
+@TheatreName varchar(20)  
+AS  
+BEGIN  
+	insert into Theatre Values (@TheatreName)
+    
+END 
+go
+
+

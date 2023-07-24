@@ -73,3 +73,17 @@ END
 go
 
 
+CREATE PROCEDURE spCustomer
+@CustomerName varchar(20)  
+AS  
+BEGIN  
+	insert into Customer Values (@CustomerName)
+    
+END 
+go
+exec spCustomer @CustomerName = 'anna',@CustomerMob = 1234567
+exec spCustomer @CustomerName = 'manna',@CustomerMob = 2345678
+exec spCustomer @CustomerName = 'ann',@CustomerMob = 3456789
+exec spCustomer @CustomerName = 'annie',@CustomerMob = 4567890
+exec spCustomer @CustomerName = 'balu',@CustomerMob = 5678901
+select * from Customer

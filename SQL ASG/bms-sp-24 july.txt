@@ -1,0 +1,42 @@
+
+CREATE TYPE LanguageMovieDetailsType AS TABLE(
+    [Id] int 
+);
+
+
+CREATE TYPE MovieGenreType AS TABLE(
+    [Id] int 
+);
+
+go
+
+create or Alter PROCEDURE spMovieDetails
+@MovieName varchar(20),  
+@language LanguageMovieDetailsType readonly,
+@genre MovieGenreType  readonly
+AS  
+BEGIN  
+	insert into MovieDetails Values (@MovieName)
+	declare @i int =@@identity
+
+	insert into LanguageMovieDetails (MovieId,LanguageId)
+	select @i,Id from @language
+
+	insert into MovieGenre(MovieId,GenreId)
+    select @i,Id from @genre
+END 
+go
+declare @i LanguageMovieDetailsType
+
+insert into @i select 50
+union all select 51
+
+declare @j MovieGenreType
+insert into @j select 101
+union all select 102
+
+
+exec spMovieDetails  @MovieName ='ab', @Language =@i, @genre = @j
+
+go
+

@@ -40,3 +40,30 @@ exec spMovieDetails  @MovieName ='ab', @Language =@i, @genre = @j
 
 go
 
+
+CREATE TYPE LocationType AS TABLE(
+    [Id] int ,
+	LocationName varchar
+);
+
+
+
+CREATE TYPE PaymentType AS TABLE(
+    [Id] int ,
+	PayType varchar
+);
+
+
+CREATE TYPE seatTicketBooking AS TABLE(
+    [Id] int 
+);
+
+CREATE TYPE ScreenType AS TABLE(
+    [Id] int ,
+	ScreenName varchar(20)
+);
+
+CREATE TYPE SeatType AS TABLE(
+    Id int ,
+	SeatName varchar(20)
+);

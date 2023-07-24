@@ -78,5 +78,12 @@ constraint fk_TheatreId foreign key(TheatreId) references Theatre(TheatreId)
 
 )
 
+CREATE TABLE Screen(
+ScreenId int NOT NULL IDENTITY,
+ScreenName varchar,
+TheatreId int,
+CONSTRAINT pk_ScreenId PRIMARY KEY(ScreenId),
+constraint fk_TheatreId6 foreign key(TheatreId) references Theatre(TheatreId)
 
+)
 

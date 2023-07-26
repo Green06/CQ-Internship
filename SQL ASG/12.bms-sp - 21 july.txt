@@ -87,3 +87,12 @@ exec spCustomer @CustomerName = 'ann',@CustomerMob = 3456789
 exec spCustomer @CustomerName = 'annie',@CustomerMob = 4567890
 exec spCustomer @CustomerName = 'balu',@CustomerMob = 5678901
 select * from Customer
+
+
+create procedure spGetPayment
+@payment varchar(20)
+as
+begin
+	insert into Pay values(@payment)
+end
+gos

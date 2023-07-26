@@ -87,3 +87,8 @@ constraint fk_TheatreId6 foreign key(TheatreId) references Theatre(TheatreId)
 
 )
 
+CREATE TABLE Pay(
+paymentId int NOT NULL IDENTITY,
+payType varchar(20)
+CONSTRAINT pk_payment PRIMARY KEY(paymentId)
+)

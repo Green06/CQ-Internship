@@ -1,0 +1,12 @@
+C:\Assigments\CQ-Internship\c#\emp.model\emp.model\bin\Debug\net7.0\emp.model.deps.json
+C:\Assigments\CQ-Internship\c#\emp.model\emp.model\bin\Debug\net7.0\emp.model.dll
+C:\Assigments\CQ-Internship\c#\emp.model\emp.model\bin\Debug\net7.0\emp.model.pdb
+C:\Assigments\CQ-Internship\c#\emp.model\emp.model\obj\Debug\net7.0\emp.model.csproj.AssemblyReference.cache
+C:\Assigments\CQ-Internship\c#\emp.model\emp.model\obj\Debug\net7.0\emp.model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Assigments\CQ-Internship\c#\emp.model\emp.model\obj\Debug\net7.0\emp.model.AssemblyInfoInputs.cache
+C:\Assigments\CQ-Internship\c#\emp.model\emp.model\obj\Debug\net7.0\emp.model.AssemblyInfo.cs
+C:\Assigments\CQ-Internship\c#\emp.model\emp.model\obj\Debug\net7.0\emp.model.csproj.CoreCompileInputs.cache
+C:\Assigments\CQ-Internship\c#\emp.model\emp.model\obj\Debug\net7.0\emp.model.dll
+C:\Assigments\CQ-Internship\c#\emp.model\emp.model\obj\Debug\net7.0\refint\emp.model.dll
+C:\Assigments\CQ-Internship\c#\emp.model\emp.model\obj\Debug\net7.0\emp.model.pdb
+C:\Assigments\CQ-Internship\c#\emp.model\emp.model\obj\Debug\net7.0\ref\emp.model.dll

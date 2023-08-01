@@ -1,0 +1,15 @@
+C:\Assigments\CQ-Internship\c#\asg2_26\asg2_26\obj\Debug\net7.0\asg2_26.csproj.AssemblyReference.cache
+C:\Assigments\CQ-Internship\c#\asg2_26\asg2_26\obj\Debug\net7.0\asg2_26.GeneratedMSBuildEditorConfig.editorconfig
+C:\Assigments\CQ-Internship\c#\asg2_26\asg2_26\obj\Debug\net7.0\asg2_26.AssemblyInfoInputs.cache
+C:\Assigments\CQ-Internship\c#\asg2_26\asg2_26\obj\Debug\net7.0\asg2_26.AssemblyInfo.cs
+C:\Assigments\CQ-Internship\c#\asg2_26\asg2_26\obj\Debug\net7.0\asg2_26.csproj.CoreCompileInputs.cache
+C:\Assigments\CQ-Internship\c#\asg2_26\asg2_26\bin\Debug\net7.0\asg2_26.exe
+C:\Assigments\CQ-Internship\c#\asg2_26\asg2_26\bin\Debug\net7.0\asg2_26.deps.json
+C:\Assigments\CQ-Internship\c#\asg2_26\asg2_26\bin\Debug\net7.0\asg2_26.runtimeconfig.json
+C:\Assigments\CQ-Internship\c#\asg2_26\asg2_26\bin\Debug\net7.0\asg2_26.dll
+C:\Assigments\CQ-Internship\c#\asg2_26\asg2_26\bin\Debug\net7.0\asg2_26.pdb
+C:\Assigments\CQ-Internship\c#\asg2_26\asg2_26\obj\Debug\net7.0\asg2_26.dll
+C:\Assigments\CQ-Internship\c#\asg2_26\asg2_26\obj\Debug\net7.0\refint\asg2_26.dll
+C:\Assigments\CQ-Internship\c#\asg2_26\asg2_26\obj\Debug\net7.0\asg2_26.pdb
+C:\Assigments\CQ-Internship\c#\asg2_26\asg2_26\obj\Debug\net7.0\asg2_26.genruntimeconfig.cache
+C:\Assigments\CQ-Internship\c#\asg2_26\asg2_26\obj\Debug\net7.0\ref\asg2_26.dll

@@ -1,0 +1,18 @@
+C:\Assigments\CQ-Internship\c#\emp-31 july\emp-31 july\bin\Debug\net7.0\emp-31 july.exe
+C:\Assigments\CQ-Internship\c#\emp-31 july\emp-31 july\bin\Debug\net7.0\emp-31 july.deps.json
+C:\Assigments\CQ-Internship\c#\emp-31 july\emp-31 july\bin\Debug\net7.0\emp-31 july.runtimeconfig.json
+C:\Assigments\CQ-Internship\c#\emp-31 july\emp-31 july\bin\Debug\net7.0\emp-31 july.dll
+C:\Assigments\CQ-Internship\c#\emp-31 july\emp-31 july\bin\Debug\net7.0\emp-31 july.pdb
+C:\Assigments\CQ-Internship\c#\emp-31 july\emp-31 july\bin\Debug\net7.0\emp.model.dll
+C:\Assigments\CQ-Internship\c#\emp-31 july\emp-31 july\bin\Debug\net7.0\emp.model.pdb
+C:\Assigments\CQ-Internship\c#\emp-31 july\emp-31 july\obj\Debug\net7.0\emp-31 july.csproj.AssemblyReference.cache
+C:\Assigments\CQ-Internship\c#\emp-31 july\emp-31 july\obj\Debug\net7.0\emp-31 july.GeneratedMSBuildEditorConfig.editorconfig
+C:\Assigments\CQ-Internship\c#\emp-31 july\emp-31 july\obj\Debug\net7.0\emp-31 july.AssemblyInfoInputs.cache
+C:\Assigments\CQ-Internship\c#\emp-31 july\emp-31 july\obj\Debug\net7.0\emp-31 july.AssemblyInfo.cs
+C:\Assigments\CQ-Internship\c#\emp-31 july\emp-31 july\obj\Debug\net7.0\emp-31 july.csproj.CoreCompileInputs.cache
+C:\Assigments\CQ-Internship\c#\emp-31 july\emp-31 july\obj\Debug\net7.0\emp-31 july.csproj.CopyComplete
+C:\Assigments\CQ-Internship\c#\emp-31 july\emp-31 july\obj\Debug\net7.0\emp-31 july.dll
+C:\Assigments\CQ-Internship\c#\emp-31 july\emp-31 july\obj\Debug\net7.0\refint\emp-31 july.dll
+C:\Assigments\CQ-Internship\c#\emp-31 july\emp-31 july\obj\Debug\net7.0\emp-31 july.pdb
+C:\Assigments\CQ-Internship\c#\emp-31 july\emp-31 july\obj\Debug\net7.0\emp-31 july.genruntimeconfig.cache
+C:\Assigments\CQ-Internship\c#\emp-31 july\emp-31 july\obj\Debug\net7.0\ref\emp-31 july.dll

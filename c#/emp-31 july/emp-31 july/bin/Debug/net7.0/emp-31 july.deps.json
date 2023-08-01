@@ -1,0 +1,40 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "emp-31 july/1.0.0": {
+        "dependencies": {
+          "emp.model": "1.0.0",
+          "emp.model.Reference": "1.0.0.0"
+        },
+        "runtime": {
+          "emp-31 july.dll": {}
+        }
+      },
+      "emp.model.Reference/1.0.0.0": {
+        "runtime": {
+          "emp.model.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "emp-31 july/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "emp.model.Reference/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

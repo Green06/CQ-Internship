@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <RootNamespace>emp_31_july</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\emp.model\emp.model\emp.model.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="emp.model">
+      <HintPath>..\..\emp.model\emp.model\bin\Debug\net7.0\emp.model.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

@@ -31,5 +31,9 @@ const movie = [
     }
   ];
   
+  const startIndex = movie.findIndex(movie => movie.MovieName === "City of Shadows");
+  console.log(startIndex);
+  const newMoviesArray = movie.slice(startIndex);
   
+  console.log(newMoviesArray);
   

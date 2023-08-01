@@ -30,6 +30,19 @@ const movie = [
       "ReleaseDate": "2022-12-19"
     }
   ];
+
+let updatedMovies = movie.filter(movie => movie.MovieName !== "The Last Stand");
+
+console.log(updatedMovies);
   
-  
-  
+
+//13
+const allReleasedAfter2021Dec31 = movie.every(movie => new Date(movie.ReleaseDate) > new Date('2021-12-31'));
+
+console.log(allReleasedAfter2021Dec31);
+
+//15
+
+const GreaterThan10 = movie.filter(movie => movie.MovieName.length > 10).map(movie => movie.MovieName);
+
+console.log(GreaterThan10);

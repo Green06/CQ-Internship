@@ -31,5 +31,17 @@ const movie = [
     }
   ];
   
+  const newMovie = {
+    "MovieName": "Rich & Poor",
+    "ActorName": "Johnie Walker",
+    "ReleaseDate": "2023-08-11"
+  };
   
+  const indexToInsert = movie.findIndex(movie => movie.MovieName === "Love and Destiny");
+  
+  
+    movie.splice(indexToInsert + 1, 0, newMovie);
+  
+  
+  console.log(movie);
   

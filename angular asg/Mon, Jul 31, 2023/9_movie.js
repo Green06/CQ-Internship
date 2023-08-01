@@ -31,5 +31,11 @@ const movie = [
     }
   ];
   
+  const newMovie = {
+    "MovieName": "Rich & Poor",
+    "ActorName": "Johnie Walker",
+    "ReleaseDate": "2023-08-11"
+  };
   
+
   

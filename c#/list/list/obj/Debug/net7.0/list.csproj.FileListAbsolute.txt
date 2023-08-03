@@ -1,0 +1,15 @@
+C:\Assigments\CQ-Internship\c#\list\list\bin\Debug\net7.0\list.exe
+C:\Assigments\CQ-Internship\c#\list\list\bin\Debug\net7.0\list.deps.json
+C:\Assigments\CQ-Internship\c#\list\list\bin\Debug\net7.0\list.runtimeconfig.json
+C:\Assigments\CQ-Internship\c#\list\list\bin\Debug\net7.0\list.dll
+C:\Assigments\CQ-Internship\c#\list\list\bin\Debug\net7.0\list.pdb
+C:\Assigments\CQ-Internship\c#\list\list\obj\Debug\net7.0\list.csproj.AssemblyReference.cache
+C:\Assigments\CQ-Internship\c#\list\list\obj\Debug\net7.0\list.GeneratedMSBuildEditorConfig.editorconfig
+C:\Assigments\CQ-Internship\c#\list\list\obj\Debug\net7.0\list.AssemblyInfoInputs.cache
+C:\Assigments\CQ-Internship\c#\list\list\obj\Debug\net7.0\list.AssemblyInfo.cs
+C:\Assigments\CQ-Internship\c#\list\list\obj\Debug\net7.0\list.csproj.CoreCompileInputs.cache
+C:\Assigments\CQ-Internship\c#\list\list\obj\Debug\net7.0\list.dll
+C:\Assigments\CQ-Internship\c#\list\list\obj\Debug\net7.0\refint\list.dll
+C:\Assigments\CQ-Internship\c#\list\list\obj\Debug\net7.0\list.pdb
+C:\Assigments\CQ-Internship\c#\list\list\obj\Debug\net7.0\list.genruntimeconfig.cache
+C:\Assigments\CQ-Internship\c#\list\list\obj\Debug\net7.0\ref\list.dll

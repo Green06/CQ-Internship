@@ -1,0 +1,15 @@
+C:\Assigments\CQ-Internship\c#\generic\generic\obj\Debug\net7.0\generic.csproj.AssemblyReference.cache
+C:\Assigments\CQ-Internship\c#\generic\generic\obj\Debug\net7.0\generic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Assigments\CQ-Internship\c#\generic\generic\obj\Debug\net7.0\generic.AssemblyInfoInputs.cache
+C:\Assigments\CQ-Internship\c#\generic\generic\obj\Debug\net7.0\generic.AssemblyInfo.cs
+C:\Assigments\CQ-Internship\c#\generic\generic\obj\Debug\net7.0\generic.csproj.CoreCompileInputs.cache
+C:\Assigments\CQ-Internship\c#\generic\generic\bin\Debug\net7.0\generic.exe
+C:\Assigments\CQ-Internship\c#\generic\generic\bin\Debug\net7.0\generic.deps.json
+C:\Assigments\CQ-Internship\c#\generic\generic\bin\Debug\net7.0\generic.runtimeconfig.json
+C:\Assigments\CQ-Internship\c#\generic\generic\bin\Debug\net7.0\generic.dll
+C:\Assigments\CQ-Internship\c#\generic\generic\bin\Debug\net7.0\generic.pdb
+C:\Assigments\CQ-Internship\c#\generic\generic\obj\Debug\net7.0\generic.dll
+C:\Assigments\CQ-Internship\c#\generic\generic\obj\Debug\net7.0\refint\generic.dll
+C:\Assigments\CQ-Internship\c#\generic\generic\obj\Debug\net7.0\generic.pdb
+C:\Assigments\CQ-Internship\c#\generic\generic\obj\Debug\net7.0\generic.genruntimeconfig.cache
+C:\Assigments\CQ-Internship\c#\generic\generic\obj\Debug\net7.0\ref\generic.dll

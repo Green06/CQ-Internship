@@ -30,10 +30,25 @@ const movie = [
       "ReleaseDate": "2022-12-19"
     }
   ];
+  //11
+  const distinctActorNamesCount = new Set(movie.map(movie => movie.ActorName)).size;
+
+  console.log("Count " + distinctActorNamesCount);
+
+
+  //12
+let updatedMovies = movie.find(movie => movie.MovieName !== "The Last Stand");
+
+console.log(updatedMovies);
   
-  const startIndex = movie.findIndex(movie => movie.MovieName === "City of Shadows");
-  console.log(startIndex);
-  const newMoviesArray = movie.slice(startIndex);
-  
-  console.log(newMoviesArray);
-  
+
+//13
+const allReleasedAfter2021Dec31 = movie.every(movie => new Date(movie.ReleaseDate) > new Date('2021-12-31'));
+
+console.log(allReleasedAfter2021Dec31);
+
+//15
+
+const GreaterThan10 = movie.filter(movie => movie.MovieName.length > 10).map(movie => movie.MovieName);
+
+console.log(GreaterThan10);

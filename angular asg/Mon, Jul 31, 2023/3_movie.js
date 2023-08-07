@@ -33,7 +33,7 @@ const movie= [
 
 
   const filim = movie.filter(movie => movie.MovieName==='The Last Stand');
-console.log(filim);
-filim.forEach(Elements =>{
+// console.log(filim);
+filim.forEach(Elements =>
    console.log(Elements.ActorName,Elements.ReleaseDate) 
-});
+     );

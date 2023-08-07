@@ -31,5 +31,5 @@ const movie= [
     }
   ]
 
-  const filim = movie.filter(movie => movie.ReleaseDate.startsWith(2023) && movie.ActorName==='William Davis');
+  const filim = movie.filter(movie =>new Date(movie.ReleaseDate).getFullYear===2023 && movie.ActorName==='William Davis');
 console.log(filim);

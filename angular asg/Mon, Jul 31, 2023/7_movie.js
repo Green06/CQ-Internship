@@ -1,4 +1,4 @@
-const movie = [
+const movie= [
     {
       "MovieName": "The Great Adventure",
       "ActorName": "John Smith",
@@ -29,7 +29,9 @@ const movie = [
       "ActorName": "Olivia Wilson",
       "ReleaseDate": "2022-12-19"
     }
-  ];
-  
-  
-  
+  ]
+
+let arr =[];
+movieName = movie.forEach(x=>includes(x.MovieName.indexOf(movie)))
+console.log(movieName)
+

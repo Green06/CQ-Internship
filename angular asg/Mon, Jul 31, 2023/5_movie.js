@@ -32,17 +32,17 @@ const movie= [
   ]
 
 
-// console.log(movie.filter((x) => x.ActorName === "Sophia Williams").length);
+console.log(movie.filter((x) => x.ActorName === "Sophia Williams").length);
 
-movie.push(
-    {
-        "MovieName": "The Final Stage",
-        "ActorName": "John Doe",
-        "ReleaseDate": "2022-08-11"
-  }
+// movie.push(
+//     {
+//         "MovieName": "The Final Stage",
+//         "ActorName": "John Doe",
+//         "ReleaseDate": "2022-08-11"
+//   }
 
-)
+// )
 
-console.log(movie)
+// console.log(movie)
 
 

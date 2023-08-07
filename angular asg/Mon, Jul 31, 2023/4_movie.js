@@ -31,7 +31,7 @@ const movie= [
     }
   ]
 
-let result = movie.some(function(element){
+let result = movie.some(element=>{
 return(element.ActorName==='John Doe')
 
 

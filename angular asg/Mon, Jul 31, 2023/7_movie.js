@@ -31,5 +31,18 @@ const movie = [
     }
   ];
   
-  
-  
+  let duplicate = false;
+const movieNames = [];
+
+movie.forEach(movies => {
+  if (movieNames.includes(movies.MovieName)) {
+    duplicate = true;
+    return;
+  }
+  console.log(movieNames.push(movies.MovieName));
+});
+if (duplicate) {
+  console.log("Duplicate movie ");
+} else {
+  console.log("No duplicate movie ");
+}

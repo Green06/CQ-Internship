@@ -36,4 +36,7 @@ const movie = [
   const newMoviesArray = movie.slice(startIndex);
   
   console.log(newMoviesArray);
+
+
+ 
   

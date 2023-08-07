@@ -30,8 +30,14 @@ const movie = [
       "ReleaseDate": "2022-12-19"
     }
   ];
+  //11
+  const distinctActorNamesCount = new Set(movie.map(movie => movie.ActorName)).size;
 
-let updatedMovies = movie.filter(movie => movie.MovieName !== "The Last Stand");
+  console.log("Count " + distinctActorNamesCount);
+
+
+  //12
+let updatedMovies = movie.find(movie => movie.MovieName !== "The Last Stand");
 
 console.log(updatedMovies);
   

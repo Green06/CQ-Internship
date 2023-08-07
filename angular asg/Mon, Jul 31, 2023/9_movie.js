@@ -30,12 +30,9 @@ const movie = [
       "ReleaseDate": "2022-12-19"
     }
   ];
-  
-  const newMovie = {
-    "MovieName": "Rich & Poor",
-    "ActorName": "Johnie Walker",
-    "ReleaseDate": "2023-08-11"
-  };
-  
 
   
+  //9
+  const distinctActorNames = [...new Set(movie.map(movies => movies.ActorName))];
+
+console.log(distinctActorNames);

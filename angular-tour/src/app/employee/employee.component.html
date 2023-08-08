@@ -1,0 +1,23 @@
+<p>employee works!</p>
+<table>
+    <tr>
+            
+        <th bgcolor="grey">First Name</th>
+        <th bgcolor="grey">Last Name</th>
+        <th bgcolor="grey">Date of Birth</th>
+        <th bgcolor="grey">Age</th>
+        <th bgcolor="grey">Joining Date</th>
+        <th bgcolor="grey">Country</th>
+    </tr>
+    <tbody>
+        <tr *ngFor="let employee of arr">
+          <td>{{ employee.FirstName }}</td>
+          <td>{{ employee.LastName }}</td>
+          <td>{{ employee.DateofBirth }}</td>
+          <td>{{ employee.Age}}</td>
+          <td>{{ employee.JoiningDate}}</td>
+          <td>{{ employee.Country}}</td>
+          <td>
+            
+       </tbody>
+</table>

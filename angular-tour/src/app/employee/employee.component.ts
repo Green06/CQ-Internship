@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { EmployeList } from './employe-list';
 
 @Component({
@@ -7,6 +7,8 @@ import { EmployeList } from './employe-list';
   styleUrls: ['./employee.component.sass']
 })
 export class EmployeeComponent {
+  input1 = '';
+  @Output() op:EventEmitter<EmployeList>= new EventEmitter()
 public arr: Array<EmployeList>=[{
 FirstName:"ann",
 LastName:"mary",
@@ -23,4 +25,8 @@ JoiningDate:new Date(2023,4,2),
 Country:"india"
 }
 ]
+
+sendValues(){
+  this.op.emit();
+}
 }

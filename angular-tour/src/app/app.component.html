@@ -13,7 +13,7 @@
     <title>Document</title>
 </head>
 <body>
-    <table>
+    <!-- <table>
         <tr>
             
             <th bgcolor="grey">First Name</th>
@@ -24,7 +24,7 @@
             <th bgcolor="grey">Country</th>
         </tr>
         <tr>
-            <!-- <th bgcolor="#bababa">First Name</th> -->
+            <th bgcolor="#bababa">First Name</th>
             <td >Jagan</td>
             <td>KCR</td>
             <td>27-04-2001</td>
@@ -39,8 +39,8 @@
             
         </tr>
         <tr>
-            <!-- <th bgcolor="#bababa">Last Name</th> -->
-            <td>ann</td>
+            <th bgcolor="#bababa">Last Name</th> -->
+            <!-- <td>ann</td>
             <td>jhon</td>
             <td>28-04-2000</td>
             <td>23</td>
@@ -52,9 +52,9 @@
             
             
         </tr>
-        <tr>
+        <tr> -->
             <!-- <th bgcolor="#bababa">Date of Birth</th> -->
-            <td>anna</td>
+            <!-- <td>anna</td>
             <td>v</td>
             <td>27-05-2002</td>
             <td>21</td>
@@ -67,32 +67,33 @@
             
             
         </tr>
-        <tr>
+        <tr> -->
             <!-- <th bgcolor="#bababa">Age</th> -->
-            <td>anu</td>
+            <!-- <td>anu</td>
             <td>RM</td>
             <td>24-03-2003</td>
             <td>20</td>
             <td>3-07-2023</td>
-            <td>India</td>
+            <td>India</td> -->
 
             
             
             
             
-        </tr>
+        <!-- </tr>
         <tr>
-            <!-- <th bgcolor="#bababa">Joining Date</th> -->
-            <td>manu</td>
+            <th bgcolor="#bababa">Joining Date</th> -->
+            <!-- <td>manu</td>
             <td>jimin</td>
             <td>22-08-2005</td>
             <td>19</td>
             <td>3-07-2023</td>
             <td>India</td>   
             
-        </tr>
+        </tr> -->
       
-    </table>
+    <!-- </table> --> 
 </body>
-<app-employee></app-employee>
+<app-employee *ngIf="showGrid"></app-employee>
+<app-employee-details *ngIf="!showGrid"></app-employee-details>
 </html>

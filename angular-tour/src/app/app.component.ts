@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { EmployeList } from './employee/employe-list';
 
 @Component({
   selector: 'app-root',
@@ -8,9 +9,14 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'angular-tour';
   showGrid=true;
+  employeeObj? : EmployeList;
 
-  GetChildData(data:boolean){  
-    console.log(data);  
- }  
+  getEmployee(emp:EmployeList){
+    this.employeeObj=emp;
+    this.showGrid=false;
+  }
+  public changeDisplay(){
+    this.showGrid = true;
+  }
 }
 

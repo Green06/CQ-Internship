@@ -11,8 +11,8 @@
     </tr>
     <tbody>
         <tr *ngFor="let employee of arr">
-          <td><button  (click)="sendValues()">{{ employee.FirstName }}</button></td>
-          <a (click)="sendValues()">{{ employee.LastName }}</a>
+          <td><button  (click)="sendValues(employee)">{{ employee.FirstName }}</button></td>
+          <td>{{ employee.LastName }}</td>
           <!-- <td>{{ employee.DateofBirth }}</td>
           <td>{{ employee.Age}}</td>
           <td>{{ employee.JoiningDate}}</td>

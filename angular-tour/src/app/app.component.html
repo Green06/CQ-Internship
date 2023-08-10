@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,7 +12,7 @@
     </style>
     <title>Document</title>
 </head>
-<body>
+<body> -->
     <!-- <table>
         <tr>
             
@@ -93,7 +93,7 @@
         </tr> -->
       
     <!-- </table> --> 
-</body>
-<app-employee *ngIf="showGrid"></app-employee>
-<app-employee-details *ngIf="!showGrid"></app-employee-details>
-</html>
+<!-- </body> -->
+<app-employee (op)="getEmployee($event)" *ngIf="showGrid"></app-employee>
+<app-employee-details [ip]="employeeObj" (back)="changeDisplay()" *ngIf="!showGrid"></app-employee-details>
+<!-- </html> -->

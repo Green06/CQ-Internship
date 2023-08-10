@@ -7,7 +7,7 @@ import { EmployeList } from './employe-list';
   styleUrls: ['./employee.component.sass']
 })
 export class EmployeeComponent {
-  input1 = '';
+  
   @Output() op:EventEmitter<EmployeList>= new EventEmitter()
 public arr: Array<EmployeList>=[{
 FirstName:"ann",
@@ -23,10 +23,18 @@ DateofBirth:new Date(2001,4,2),
 Age	:22,
 JoiningDate:new Date(2023,4,2),
 Country:"india"
+},
+{
+  FirstName:"anu",
+LastName:"thomason",
+DateofBirth:new Date(2001,4,2),
+Age	:22,
+JoiningDate:new Date(2023,4,2),
+Country:"india"
 }
 ]
 
-sendValues(){
-  this.op.emit();
+sendValues(value:EmployeList){
+  this.op.emit(value);
 }
 }

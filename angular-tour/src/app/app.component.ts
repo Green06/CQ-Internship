@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { EmployeList } from './employee/employe-list';
+import { EmployeList } from './NewEmployee/employee/employe-list';
 
 @Component({
   selector: 'app-root',

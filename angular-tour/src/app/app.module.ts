@@ -5,19 +5,25 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EmpModuleModule } from './NewEmployee/emp-module.module';
 
+import { DepModule } from './dep-home/dep.module';
+import { HomeComponent } from './NewEmployee/home/home.component';
+import { DepHomeComponent } from './dep-home/dep-home.component';
+
+
 @NgModule({
     declarations: [
         AppComponent,
-        // EmployeeComponent,
-        // EmployeeDetailsComponent
+       
+        DepHomeComponent 
+        
     ],
     providers: [],
     bootstrap: [AppComponent],
     imports: [
         BrowserModule,
         AppRoutingModule,
-        EmpModuleModule
-        
+        EmpModuleModule,
+        DepModule
     ]
 })
 export class AppModule { }

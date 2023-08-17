@@ -1,0 +1,9 @@
+<h1>Department Names</h1>
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+  <tr *ngFor="let i of dep">
+    <td><button (click)="changeDisplay(i)"> {{ i.deptName }}</button></td>
+  </tr>
+</table>

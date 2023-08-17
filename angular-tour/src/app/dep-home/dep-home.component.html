@@ -1,0 +1,2 @@
+<app-dep-name *ngIf="showTable" (newDisplayEvent)="fullDetails($event)" ></app-dep-name>
+<app-dep-details *ngIf="!showTable" [obj]="ob" (goback)="changeDisplay()"></app-dep-details>

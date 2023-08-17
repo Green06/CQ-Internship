@@ -94,6 +94,10 @@
       
     <!-- </table> --> 
 <!-- </body> -->
-<app-employee (op)="getEmployee($event)" *ngIf="showGrid"></app-employee>
-<app-employee-details [ip]="employeeObj" (back)="changeDisplay()" *ngIf="!showGrid"></app-employee-details>
+ <!-- <app-employee (op)="getEmployee($event)" *ngIf="showGrid"></app-employee>  -->
+<!-- <app-employee-details [ip]="employeeObj" (back)="changeDisplay()" *ngIf="!showGrid"></app-employee-details>  -->
 <!-- </html> -->
+
+<app-home></app-home>
+<!-- <app-dep-home></app-dep-home> -->
+<router-outlet></router-outlet>

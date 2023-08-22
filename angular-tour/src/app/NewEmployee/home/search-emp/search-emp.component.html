@@ -1,0 +1,25 @@
+<form [formGroup]="search" (ngSubmit)="onsubmit()">
+    <label for="searchEmployee">Enter Employee Name</label>
+    <input id="searchEmployee" type="text" formControlName="searchEmployee" />
+    <button type="submit" [disabled]="!search.valid">Search</button>
+</form>
+
+<table>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Date of Birth</th>
+      <th>Age</th>
+      <th>Joining Date</th>
+      <th>Country</th>
+    </tr>
+    <tr *ngFor ="let i of element">
+      <td>{{ i.FirstName }}</td>
+      <td>{{ i?.LastName }}</td>
+      <td>{{ i?.DateofBirth }}</td>
+      <td>{{ i?.Age }}</td>
+      <td>{{ i?.JoiningDate }}</td>
+      <td>{{ i?.Country }}</td>
+    </tr>
+  </table>
+

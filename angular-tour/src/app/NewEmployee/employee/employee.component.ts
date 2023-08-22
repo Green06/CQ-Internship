@@ -9,6 +9,7 @@ import { ActivatedRoute,Router} from '@angular/router';
   styleUrls: ['./employee.component.sass']
 })
 export class EmployeeComponent {
+
   
 //   @Output() op:EventEmitter<EmployeList>= new EventEmitter()
 //   public detailsofEmp?: EmployeList;
@@ -66,5 +67,17 @@ constructor(private empService:EmployeeService,private route:ActivatedRoute,priv
 changeDisplay(value: EmployeList) {
   this.router.navigate
   ([`./employee/${value.id}/details`]);
+}
+addEmp(){
+  this.router.navigate([`./employee/addEmployee`],
+  {
+    relativeTo: this.activatedRoute
+  })
+}
+searchEmp(){
+  this.router.navigate([`./employee/searchEmployee`],
+  {
+    relativeTo: this.activatedRoute
+  })
 }
 }

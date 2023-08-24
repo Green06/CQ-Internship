@@ -1,40 +1,40 @@
 import { Injectable } from '@angular/core';
-import { EmployeList } from './NewEmployee/employe-list'
+import { EmployeList } from './NewEmployee/employe-list';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
+  
 })
+
 export class EmployeeService {
 
-  public EmployeList: Array<EmployeList> = [
+  
+  
+  constructor(private http: HttpClient) { }
+ readonly apiUrl='https://localhost:7256/api';
 
-    {
-      id: 1,
-      FirstName: "ann",
-      LastName: "mary",
-      DateofBirth: new Date(1923, 4, 2),
-      Age: 22,
-      JoiningDate: new Date(1923, 4, 2),
-      Country: "india"
-    },
-    {
-      id: 2,
-      FirstName: "ann",
-      LastName: "thomas",
-      DateofBirth: new Date(2001, 4, 2),
-      Age: 22,
-      JoiningDate: new Date(2023, 4, 2),
-      Country: "india"
-    },
-    {
-      id: 3,
-      FirstName: "anu",
-      LastName: "thomason",
-      DateofBirth: new Date(2001, 4, 2),
-      Age: 22,
-      JoiningDate: new Date(2023, 4, 2),
-      Country: "india"
-    }
 
-  ];
+getEmployeeData(){
+  return this.http.get<Array<EmployeList>>
+  (`${this.apiUrl}/Employee/GetAll`)
+}
+x:string="https://localhost:7256/api/Employee/AddEmployee";
+addEmployee(employee: EmployeList){
+  return this.http.post(this.x, employee);
+}
+deleteEmployee(id: Number) {
+  return this.http.delete<EmployeList>
+  (`${this.apiUrl}/Employee/Delete/?id=${id}`);
+}
+
+updateEmployee(employee: EmployeList,id: number){
+  return this.http.put<EmployeList>
+  (`${this.apiUrl}/Employee/Update?id=${id}`, employee);
+}
+findById(id:number){
+  return this.http.get<EmployeList>
+  (`${this.apiUrl}/Employee/GetById?id=${id}`)
+}
 
 }

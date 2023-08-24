@@ -14,12 +14,15 @@
       <th>Country</th>
     </tr>
     <tr *ngFor ="let i of element">
-      <td>{{ i.FirstName }}</td>
-      <td>{{ i?.LastName }}</td>
-      <td>{{ i?.DateofBirth }}</td>
+      <td>{{ i.firstName }}</td>
+      <td>{{ i?.lastName }}</td>
+      <td>{{ i?.email }}</td>
+      <td>{{ i?.phoneNumber }}</td>
+      <td>{{ i?.departmentId }}</td>
+      <!-- <td>{{ i?.DateofBirth }}</td>
       <td>{{ i?.Age }}</td>
       <td>{{ i?.JoiningDate }}</td>
-      <td>{{ i?.Country }}</td>
+      <td>{{ i?.Country }}</td> -->
     </tr>
   </table>
 

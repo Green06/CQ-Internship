@@ -7,17 +7,16 @@
   <label for="last-name">Last Name: </label>
   <input id="last-name" type="text" formControlName="lastName" />
 
-  <label for="dateOfBirth">Date of birth: </label>
-  <input id="dateOfBirth" type="date" formControlName="dateOfBirth" />
+  <label for="Email">Email </label>
+  <input id="Email" type="text" formControlName="Email" />
 
-  <label for="age">Age: </label>
-  <input id="age" type="text" formControlName="age" />
+  
 
-  <label for="joiningDate">Joining date: </label>
-  <input id="joiningDate" type="date" formControlName="joiningDate" />
+  <label for="phoneNumber">phoneNumber </label>
+  <input id="phoneNumber" type="text" formControlName="phoneNumber" />
 
-  <label for="country">Country: </label>
-  <input id="country" type="text" formControlName="country" />
+  <label for="departmentId">departmentId: </label>
+  <input id="departmentId" type="text" formControlName="departmentId" />
   <p>Complete the form to enable button.</p>
   <button type="submit" [disabled]="!ngForm.valid">Submit</button>
 </form>

@@ -9,65 +9,57 @@ import { ActivatedRoute,Router} from '@angular/router';
   styleUrls: ['./employee.component.sass']
 })
 export class EmployeeComponent {
+  activatedRoute: ActivatedRoute | null | undefined;
 
-  
-//   @Output() op:EventEmitter<EmployeList>= new EventEmitter()
-//   public detailsofEmp?: EmployeList;
-// public employeeId: number = 0;
-public arr: Array<EmployeList>=[
-  // {
-//   id:1,
-// FirstName:"ann",
-// LastName:"mary",
-// DateofBirth:new Date(1923,4,2),
-// Age	:22,
-// JoiningDate:new Date(1923,4,2),
-// Country:"india"}   ,
-// {
-//   id:2,
-//   FirstName:"ann",
-// LastName:"thomas",
-// DateofBirth:new Date(2001,4,2),
-// Age	:22,
-// JoiningDate:new Date(2023,4,2),
-// Country:"india"
-// },
-// {
-//   id:3,
-//   FirstName:"anu",
-// LastName:"thomason",
-// DateofBirth:new Date(2001,4,2),
-// Age	:22,
-// JoiningDate:new Date(2023,4,2),
-// Country:"india"
-// }
-]
-  activatedRoute: any;
-
-// sendValues(value:EmployeList){
-//   this.op.emit(value);
-// }
-constructor(private empService:EmployeeService,private route:ActivatedRoute,private router:Router)
+  constructor(private empService:EmployeeService,private route:ActivatedRoute,private router:Router)
 {
-  this.arr=this.empService.EmployeList;
+  
 }
 
-// ngOnInit(): void {
-//   console.log(this.route);
-//   const id: string = this.route.snapshot.params['id'];
-//   this.employeeId = Number(id);
-//   console.log(this.employeeId);
-//   this.detailsofEmp = this.arr.find((emp) => emp.id === this.employeeId)
-// }
+public arr: Array<EmployeList>=[]
 
-// change()
-// {
-//   this.router.navigate(['./NewEmployee']);
-// }
+private fetchEmployeeData(): void {
+  this.empService.getEmployeeData().subscribe(
+    (data: Array<EmployeList>) => {
+      this.arr = data;
+      console.log(this.arr)
+    }
+  );
+}
+  
+
+
 changeDisplay(value: EmployeList) {
   this.router.navigate
   ([`./employee/${value.id}/details`]);
 }
+
+updateEmp(value: EmployeList){
+  this.router.navigate([`./employee/${value.id}/employeeupdate`],
+  {
+    relativeTo: this.activatedRoute
+  })
+}
+ngOnInit()
+{
+  this.fetchEmployeeData()
+}
+
+delete(id:Number){
+  this.empService.deleteEmployee(id).subscribe(
+    (data)=>{
+      console.log(data);
+      this.fetchEmployeeData();
+    }
+    );
+  
+  
+
+}
+
+
+
+
 addEmp(){
   this.router.navigate([`./employee/addEmployee`],
   {

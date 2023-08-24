@@ -4,17 +4,25 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EmpModuleModule } from './NewEmployee/emp-module.module';
-
+import { HttpClientModule } from '@angular/common/http'
 import { DepModule } from './dep-home/dep.module';
 import { HomeComponent } from './NewEmployee/home/home.component';
 import { DepHomeComponent } from './dep-home/dep-home.component';
 import { FormsModule } from '@angular/forms';
 
+import { EmployeeUpdateComponent } from './employee-update/employee-update.component';
+
+
+
 @NgModule({
     declarations: [
         AppComponent,
-       
-        DepHomeComponent 
+        
+        DepHomeComponent,
+                 
+     EmployeeUpdateComponent,
+                // NewEmpComponent,
+                 
         
     ],
     providers: [],
@@ -24,7 +32,8 @@ import { FormsModule } from '@angular/forms';
         AppRoutingModule,
         EmpModuleModule,
         DepModule,
-        FormsModule ,ReactiveFormsModule                   
+        FormsModule ,ReactiveFormsModule,
+        HttpClientModule,                   
     ]
 })
 export class AppModule { }

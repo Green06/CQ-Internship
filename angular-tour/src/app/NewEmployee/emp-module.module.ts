@@ -14,9 +14,7 @@ import { SearchEmpComponent } from './home/search-emp/search-emp.component';
     EmployeeComponent,
     HomeComponent,
     AddEmpComponent,
-    
-    SearchEmpComponent
-    
+     SearchEmpComponent
   ],
   imports: [
     CommonModule,ReactiveFormsModule 

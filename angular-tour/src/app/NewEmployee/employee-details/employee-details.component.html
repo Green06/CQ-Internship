@@ -1,20 +1,25 @@
 <body>
-    <table>
+
+
+    <table *ngIf="ip">
       <tr>
         <th>First Name</th>
         <th>Last Name</th>
-        <th>Date of Birth</th>
-        <th>Age</th>
-        <th>Joining Date</th>
-        <th>Country</th>
+        <th>Email</th>
+        <th>PhoneNumber</th>
+        <th>DepartmentId </th>
+        
       </tr>
       <tr>
-        <td>{{ ip?.FirstName }}</td>
-        <td>{{ ip?.LastName }}</td>
-        <td>{{ ip?.DateofBirth }}</td>
-        <td>{{ ip?.Age }}</td>
-        <td>{{ ip?.JoiningDate }}</td>
-        <td>{{ ip?.Country }}</td>
+        <td>{{ ip.firstName }}</td>
+        <td>{{ ip.lastName }}</td>
+        <td>{{ ip.email }}</td>
+        <td>{{ ip.phoneNumber }}</td>
+        <td>{{ ip.departmentId }}</td>
+
+
+       
+
       </tr>
     </table>
   </body>

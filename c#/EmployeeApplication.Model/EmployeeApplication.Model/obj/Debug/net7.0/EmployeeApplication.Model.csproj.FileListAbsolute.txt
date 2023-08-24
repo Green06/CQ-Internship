@@ -1,0 +1,14 @@
+C:\Assigments\CQ-Internship\c#\EmployeeApplication.Model\EmployeeApplication.Model\bin\Debug\net7.0\EmployeeApplication.Model.deps.json
+C:\Assigments\CQ-Internship\c#\EmployeeApplication.Model\EmployeeApplication.Model\bin\Debug\net7.0\EmployeeApplication.Model.runtimeconfig.json
+C:\Assigments\CQ-Internship\c#\EmployeeApplication.Model\EmployeeApplication.Model\bin\Debug\net7.0\EmployeeApplication.Model.dll
+C:\Assigments\CQ-Internship\c#\EmployeeApplication.Model\EmployeeApplication.Model\bin\Debug\net7.0\EmployeeApplication.Model.pdb
+C:\Assigments\CQ-Internship\c#\EmployeeApplication.Model\EmployeeApplication.Model\obj\Debug\net7.0\EmployeeApplication.Model.csproj.AssemblyReference.cache
+C:\Assigments\CQ-Internship\c#\EmployeeApplication.Model\EmployeeApplication.Model\obj\Debug\net7.0\EmployeeApplication.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Assigments\CQ-Internship\c#\EmployeeApplication.Model\EmployeeApplication.Model\obj\Debug\net7.0\EmployeeApplication.Model.AssemblyInfoInputs.cache
+C:\Assigments\CQ-Internship\c#\EmployeeApplication.Model\EmployeeApplication.Model\obj\Debug\net7.0\EmployeeApplication.Model.AssemblyInfo.cs
+C:\Assigments\CQ-Internship\c#\EmployeeApplication.Model\EmployeeApplication.Model\obj\Debug\net7.0\EmployeeApplication.Model.csproj.CoreCompileInputs.cache
+C:\Assigments\CQ-Internship\c#\EmployeeApplication.Model\EmployeeApplication.Model\obj\Debug\net7.0\EmployeeApplication.Model.dll
+C:\Assigments\CQ-Internship\c#\EmployeeApplication.Model\EmployeeApplication.Model\obj\Debug\net7.0\refint\EmployeeApplication.Model.dll
+C:\Assigments\CQ-Internship\c#\EmployeeApplication.Model\EmployeeApplication.Model\obj\Debug\net7.0\EmployeeApplication.Model.pdb
+C:\Assigments\CQ-Internship\c#\EmployeeApplication.Model\EmployeeApplication.Model\obj\Debug\net7.0\EmployeeApplication.Model.genruntimeconfig.cache
+C:\Assigments\CQ-Internship\c#\EmployeeApplication.Model\EmployeeApplication.Model\obj\Debug\net7.0\ref\EmployeeApplication.Model.dll

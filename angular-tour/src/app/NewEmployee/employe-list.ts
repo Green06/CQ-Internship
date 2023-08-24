@@ -1,9 +1,12 @@
 export interface EmployeList {
-    id:number;
-    FirstName:String;
-    LastName:String;
-    DateofBirth:Date;
-    Age	:number;
-    JoiningDate:Date;
-    Country:String;
+    id:Number;
+    firstName:String;
+    lastName:String;
+    email:String;
+    phoneNumber:Number;
+    departmentId:Number;
+    // DateofBirth:Date;
+    // Age	:number;
+    // JoiningDate:Date;
+    // Country:String;
 }

@@ -18,6 +18,4 @@ export class DepHomeComponent {
   public changeDisplay(){
     this.showTable=true;
   }
-
-
 }

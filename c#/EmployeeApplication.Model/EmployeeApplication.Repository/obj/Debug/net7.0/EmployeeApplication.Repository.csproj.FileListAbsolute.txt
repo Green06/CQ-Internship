@@ -1,0 +1,17 @@
+C:\Assigments\CQ-Internship\c#\EmployeeApplication.Model\EmployeeApplication.Repository\bin\Debug\net7.0\EmployeeApplication.Repository.deps.json
+C:\Assigments\CQ-Internship\c#\EmployeeApplication.Model\EmployeeApplication.Repository\bin\Debug\net7.0\EmployeeApplication.Repository.runtimeconfig.json
+C:\Assigments\CQ-Internship\c#\EmployeeApplication.Model\EmployeeApplication.Repository\bin\Debug\net7.0\EmployeeApplication.Repository.dll
+C:\Assigments\CQ-Internship\c#\EmployeeApplication.Model\EmployeeApplication.Repository\bin\Debug\net7.0\EmployeeApplication.Repository.pdb
+C:\Assigments\CQ-Internship\c#\EmployeeApplication.Model\EmployeeApplication.Repository\bin\Debug\net7.0\EmployeeApplication.Model.dll
+C:\Assigments\CQ-Internship\c#\EmployeeApplication.Model\EmployeeApplication.Repository\bin\Debug\net7.0\EmployeeApplication.Model.pdb
+C:\Assigments\CQ-Internship\c#\EmployeeApplication.Model\EmployeeApplication.Repository\obj\Debug\net7.0\EmployeeApplication.Repository.csproj.AssemblyReference.cache
+C:\Assigments\CQ-Internship\c#\EmployeeApplication.Model\EmployeeApplication.Repository\obj\Debug\net7.0\EmployeeApplication.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Assigments\CQ-Internship\c#\EmployeeApplication.Model\EmployeeApplication.Repository\obj\Debug\net7.0\EmployeeApplication.Repository.AssemblyInfoInputs.cache
+C:\Assigments\CQ-Internship\c#\EmployeeApplication.Model\EmployeeApplication.Repository\obj\Debug\net7.0\EmployeeApplication.Repository.AssemblyInfo.cs
+C:\Assigments\CQ-Internship\c#\EmployeeApplication.Model\EmployeeApplication.Repository\obj\Debug\net7.0\EmployeeApplication.Repository.csproj.CoreCompileInputs.cache
+C:\Assigments\CQ-Internship\c#\EmployeeApplication.Model\EmployeeApplication.Repository\obj\Debug\net7.0\EmployeeApplication.Repository.csproj.CopyComplete
+C:\Assigments\CQ-Internship\c#\EmployeeApplication.Model\EmployeeApplication.Repository\obj\Debug\net7.0\EmployeeApplication.Repository.dll
+C:\Assigments\CQ-Internship\c#\EmployeeApplication.Model\EmployeeApplication.Repository\obj\Debug\net7.0\refint\EmployeeApplication.Repository.dll
+C:\Assigments\CQ-Internship\c#\EmployeeApplication.Model\EmployeeApplication.Repository\obj\Debug\net7.0\EmployeeApplication.Repository.pdb
+C:\Assigments\CQ-Internship\c#\EmployeeApplication.Model\EmployeeApplication.Repository\obj\Debug\net7.0\EmployeeApplication.Repository.genruntimeconfig.cache
+C:\Assigments\CQ-Internship\c#\EmployeeApplication.Model\EmployeeApplication.Repository\obj\Debug\net7.0\ref\EmployeeApplication.Repository.dll

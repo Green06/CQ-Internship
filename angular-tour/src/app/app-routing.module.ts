@@ -4,46 +4,51 @@ import { RouterModule, Routes } from '@angular/router';
 import { EmployeeComponent } from './NewEmployee/employee/employee.component';
 import { EmployeeDetailsComponent } from './NewEmployee/employee-details/employee-details.component';
 import { DepHomeComponent } from './dep-home/dep-home.component';
-import { DepNameComponent } from './dep-home/dep-name/dep-name.component';
-import { DepDetailsComponent } from './dep-home/dep-details/dep-details.component';
+import{EmployeeUpdateComponent} from '../app/employee-update/employee-update.component'
 import { AddEmpComponent } from './NewEmployee/home/add-emp/add-emp.component';
 import { SearchEmpComponent } from './NewEmployee/home/search-emp/search-emp.component';
 
 const routes: Routes = [
   {
-    path:'employee',
-    children:[{
-      path:'',component:EmployeeComponent
-    },
-    
-  {
-    path:':id/details',component:EmployeeDetailsComponent
-  },
-{
-  path:'addEmployee',component:AddEmpComponent
-},
-{
-  path:'searchEmployee',component:SearchEmpComponent
-}]
-
-  },{
-    path:'department',
-    children:[
+    path: 'employee',
+    children: [
       {
-        path:'', component:DepHomeComponent
-        
+        path: '',
+        component: EmployeeComponent,
       },
-      // {
-      //   path:'/details',component:DepDetailsComponent
-      // }
- 
-  ],
-  
-  }
+
+      {
+        path: ':id/details',
+        component: EmployeeDetailsComponent,
+      },
+      {
+        path: 'addEmployee',
+        component: AddEmpComponent,
+      },
+      {
+        path: 'searchEmployee',
+        component: SearchEmpComponent,
+      },
+      {
+        path: ':id/employeeupdate',
+        component: EmployeeUpdateComponent ,
+      },
+    ],
+  },
+  {
+    path: 'department',
+    children: [
+      {
+        path: '',
+        component: DepHomeComponent,
+      },
+     
+    ],
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

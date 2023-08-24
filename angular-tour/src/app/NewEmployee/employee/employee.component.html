@@ -1,10 +1,11 @@
-<p>employee works!</p>
+
 
 <table>
     <tr>
-            
+      <th bgcolor="grey">id</th>
         <th bgcolor="grey">First Name</th>
         <th bgcolor="grey">Last Name</th>
+        
         <!-- <th bgcolor="grey">Date of Birth</th>
         <th bgcolor="grey">Age</th>
         <th bgcolor="grey">Joining Date</th>
@@ -12,13 +13,15 @@
     </tr>
     <tbody>
         <tr *ngFor="let employee of arr">
-          <td><button  (click)="changeDisplay(employee)">{{ employee.FirstName }}</button></td>
-          <td>{{ employee.LastName }}</td>
-          <!-- <td>{{ employee.DateofBirth }}</td>
-          <td>{{ employee.Age}}</td>
-          <td>{{ employee.JoiningDate}}</td>
-          <td>{{ employee.Country}}</td> -->
-          <td>
+          <td>{{ employee.id }}</td>
+          <td><button  (click)="changeDisplay(employee)">{{ employee.firstName }}</button></td>
+          <td>{{ employee.lastName }}</td>
+          
+          
+
+            <button (click)="changeDisplay(employee)">Full details</button>
+            <button (click)="updateEmp(employee)">Update</button>
+            <button (click)="delete(employee.id)">Delete</button>
             
        </tbody>
        <button (click)="addEmp()">add new Employees</button>

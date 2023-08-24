@@ -21,8 +21,9 @@ export class SearchEmpComponent {
   controls: any;
   constructor(
     empservice:EmployeeService
-  ){
-    this.emp=empservice.EmployeList
+  )
+  {
+  //   this.emp=empservice.EmployeList
   }
   onsubmit(){
    this.employee= this.search.get('searchEmployee')?.value!;
@@ -30,7 +31,7 @@ export class SearchEmpComponent {
     console.log(
       this.emp
         .filter((x) =>
-          x.FirstName
+          x.firstName
             .toLocaleLowerCase()
             .includes(this.employee.toLocaleLowerCase())
         )
@@ -46,7 +47,7 @@ export class SearchEmpComponent {
 
     this.element = this.emp
     .filter((x) =>
-      x.FirstName
+      x.firstName
         .toLocaleLowerCase()
         .includes(this.employee.toLocaleLowerCase())
     )
